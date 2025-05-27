@@ -1,10 +1,30 @@
 import math
 from detector.pose_detector import calcular_angulo
+from playsound import playsound
+import threading
+
 from ejercicios.ejercicio_interfaz import Ejercicio_interfaz
+import os
 
 class Sentadilla(Ejercicio_interfaz):
     def __init__(self):
         self.feedback = ""
+        self.audio_path = "audios_feedback"
+        self.mensajes_audio = {
+            "Cuidado con la retroversion pelvica.": "retroversion_pelvica.mp3",
+            "Debes bajar mas para completar la sentadilla.": "bajar_mas.mp3",
+            "Mantén el torso mas erguido.": "torso_erguido.mp3",
+            "No levantes los talones del suelo.": "no_levantes_talones.mp3",
+            "Buena tecnica!": "buena_tecnica.mp3"
+        }
+
+    def reproducir_audio(self, mensaje):
+        archivo = self.mensajes_audio.get(mensaje)
+        if archivo:
+            ruta = os.path.join(self.audio_path, archivo)
+            if os.path.exists(ruta):
+                print(f"Reproduciendo: {ruta}")
+                threading.Thread(target=playsound, args=(ruta,), daemon=True).start()
 
     def verificar(self, puntos_clave):
         hombro_izquierdo = puntos_clave[11]
@@ -20,8 +40,6 @@ class Sentadilla(Ejercicio_interfaz):
         punta_pie_izquierda = puntos_clave[31]
         punta_pie_derecha = puntos_clave[32]
 
-        # Determinar hacia dónde mira el cuerpo
-        # Si hombro izquierdo está más a la derecha, entonces mira hacia la izquierda (perfil derecho)
         mirando_izquierda = hombro_izquierdo[0] > hombro_derecho[0]
 
         if mirando_izquierda:
@@ -41,12 +59,10 @@ class Sentadilla(Ejercicio_interfaz):
             punta_pie = punta_pie_izquierda
             otra_cadera = cadera_derecha
 
-        # Calcular ángulos
         angulo_rodilla = calcular_angulo(cadera, rodilla, tobillo)
         angulo_tronco = calcular_angulo(hombro, cadera, rodilla)
         angulo_cadera = calcular_angulo(rodilla, cadera, otra_cadera)
 
-        # Calcular alturas para verificar talones levantados
         altura_talon = talon[1]
         altura_punta_pie = punta_pie[1]
 
@@ -54,21 +70,28 @@ class Sentadilla(Ejercicio_interfaz):
 
         if angulo_cadera < 100:
             errores.append("Cuidado con la retroversion pelvica.")
-
+            self.feedback = "\n".join(errores)
+            for mensaje in errores:
+                self.reproducir_audio(mensaje)
         if angulo_rodilla > 120:
             errores.append("Debes bajar mas para completar la sentadilla.")
-
+            self.feedback = "\n".join(errores)
+            for mensaje in errores:
+                self.reproducir_audio(mensaje)
         if angulo_tronco < 60:
             errores.append("Mantén el torso mas erguido.")
-
+            self.feedback = "\n".join(errores)
+            for mensaje in errores:
+                self.reproducir_audio(mensaje)
         if altura_talon < altura_punta_pie - 20:
             errores.append("No levantes los talones del suelo.")
-
-        if errores:
             self.feedback = "\n".join(errores)
+            for mensaje in errores:
+                self.reproducir_audio(mensaje)
+
         else:
             self.feedback = "Buena tecnica!"
+            self.reproducir_audio(self.feedback)
 
         progreso = 100 - min(100, max(0, angulo_rodilla - 90))
         return self.feedback, progreso
-
