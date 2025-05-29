@@ -1,15 +1,46 @@
 import math
-from detector.pose_detector import calcular_angulo
-from playsound import playsound
-import threading
-
-from ejercicios.ejercicio_interfaz import Ejercicio_interfaz
 import os
+import threading
+import queue
+import time
+import pygame
+
+from detector.pose_detector import calcular_angulo
+from ejercicios.ejercicio_interfaz import Ejercicio_interfaz
+
+
+class ReproductorAudio:
+    def __init__(self, carpeta_audio):
+        pygame.mixer.init()
+        self.audio_path = carpeta_audio
+        self.cola = queue.Queue()
+        self.hilo = threading.Thread(target=self.reproducir_en_cola, daemon=True)
+        self.hilo.start()
+
+    def agregar_audio(self, archivo):
+        ruta = os.path.join(self.audio_path, archivo)
+        if os.path.exists(ruta):
+            self.cola.put(ruta)
+        else:
+            print(f"[ERROR] Archivo no encontrado: {ruta}")
+
+    def reproducir_en_cola(self):
+        while True:
+            ruta = self.cola.get()
+            try:
+                pygame.mixer.music.load(ruta)
+                pygame.mixer.music.play()
+                print(f"[DEBUG] Reproduciendo: {ruta}")
+                while pygame.mixer.music.get_busy():
+                    time.sleep(0.1)
+            except Exception as e:
+                print(f"[ERROR] Error al reproducir {ruta}: {e}")
+            self.cola.task_done()
+
 
 class Sentadilla(Ejercicio_interfaz):
     def __init__(self):
         self.feedback = ""
-        self.audio_path = "audios_feedback"
         self.mensajes_audio = {
             "Cuidado con la retroversion pelvica.": "retroversion_pelvica.mp3",
             "Debes bajar mas para completar la sentadilla.": "bajar_mas.mp3",
@@ -17,14 +48,13 @@ class Sentadilla(Ejercicio_interfaz):
             "No levantes los talones del suelo.": "no_levantes_talones.mp3",
             "Buena tecnica!": "buena_tecnica.mp3"
         }
+        ruta_audio = os.path.join(os.path.dirname(__file__), "audios_feedback")
+        self.reproductor = ReproductorAudio(ruta_audio)
 
     def reproducir_audio(self, mensaje):
         archivo = self.mensajes_audio.get(mensaje)
         if archivo:
-            ruta = os.path.join(self.audio_path, archivo)
-            if os.path.exists(ruta):
-                print(f"Reproduciendo: {ruta}")
-                threading.Thread(target=playsound, args=(ruta,), daemon=True).start()
+            self.reproductor.agregar_audio(archivo)
 
     def verificar(self, puntos_clave):
         hombro_izquierdo = puntos_clave[11]
@@ -70,25 +100,17 @@ class Sentadilla(Ejercicio_interfaz):
 
         if angulo_cadera < 100:
             errores.append("Cuidado con la retroversion pelvica.")
-            self.feedback = "\n".join(errores)
-            for mensaje in errores:
-                self.reproducir_audio(mensaje)
         if angulo_rodilla > 120:
             errores.append("Debes bajar mas para completar la sentadilla.")
-            self.feedback = "\n".join(errores)
-            for mensaje in errores:
-                self.reproducir_audio(mensaje)
         if angulo_tronco < 60:
             errores.append("Mantén el torso mas erguido.")
-            self.feedback = "\n".join(errores)
-            for mensaje in errores:
-                self.reproducir_audio(mensaje)
         if altura_talon < altura_punta_pie - 20:
             errores.append("No levantes los talones del suelo.")
+
+        if errores:
             self.feedback = "\n".join(errores)
             for mensaje in errores:
                 self.reproducir_audio(mensaje)
-
         else:
             self.feedback = "Buena tecnica!"
             self.reproducir_audio(self.feedback)
