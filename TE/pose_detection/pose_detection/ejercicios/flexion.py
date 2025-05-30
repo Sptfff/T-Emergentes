@@ -1,6 +1,6 @@
 import math
 from detector.pose_detector import calcular_angulo
-from playsound import playsound
+#from playsound import playsound
 import threading
 import os
 
@@ -23,7 +23,7 @@ class Flexion(Ejercicio_interfaz):
             ruta = os.path.join(self.audio_path, archivo)
             if os.path.exists(ruta):
                 print(f"Reproduciendo: {ruta}")
-                threading.Thread(target=playsound, args=(ruta,), daemon=True).start()
+                #threading.Thread(target=playsound, args=(ruta,), daemon=True).start()
 
     def verificar(self, puntos_clave):
         hombro_izquierdo = puntos_clave[11]

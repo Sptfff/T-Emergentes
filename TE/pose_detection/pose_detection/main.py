@@ -59,6 +59,17 @@ while True:
     exito, img = cap.read()
     img = cv2.flip(img, 1)
 
+    if cv2.waitKey(1) & 0xFF == ord('r'):
+        modo_seleccion = True
+        ejercicio_seleccionado = None
+        verificador = None
+        empezado = False
+        serie_finalizada = False
+
+    if ejercicio_seleccionado:
+        cv2.putText(img, f"Ejercicio: {ejercicio_seleccionado}", (300, 50),
+        cv2.FONT_HERSHEY_SIMPLEX, 1.0, (255, 255, 0), 2)
+
     if modo_seleccion:
         # Menú de selección de ejercicio
         img = np.zeros((480, 640, 3), dtype=np.uint8)
