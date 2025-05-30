@@ -28,8 +28,8 @@ tiempo_limite = 10  # segundos de inactividad permitidos
 
 # Posiciones de botones
 botones = {
-    "Sentadilla": ((10, 10), (210, 60)),
-    "Flexion": ((10, 70), (210, 120))
+    "Sentadilla": ((10, 100), (210, 160)),
+    "Flexion": ((10, 170), (210, 220))
 }
 
 def evento_click(evento, x, y, flags, param):
