@@ -52,6 +52,12 @@ def evento_click(evento, x, y, flags, param):
                 contador.direccion = 0
                 ultimo_tiempo_repeticion = None
 
+            elif 220 < x < 420 and 10 < y < 60:
+                if empezado:
+                    serie_finalizada = True
+                    empezado = False
+
+
 cv2.namedWindow("Entrenador")
 cv2.setMouseCallback("Entrenador", evento_click)
 erroresTotales = []
@@ -123,6 +129,12 @@ while True:
         cv2.rectangle(img, (10, 10), (210, 60), (0, 255, 0), -1)
         cv2.putText(img, "EMPEZAR", (30, 45),
                     cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 0), 2)
+        
+    if empezado and not serie_finalizada:
+
+        cv2.rectangle(img, (220, 10), (420, 60), (0, 0, 255), -1)
+        cv2.putText(img, "FINALIZAR", (240, 45),
+                    cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
 
     cv2.putText(img, f'Repeticiones: {conteo}', (20, 100),
                 cv2.FONT_HERSHEY_SIMPLEX, 1.5, (0, 255, 0), 3)
@@ -133,6 +145,8 @@ while True:
         cv2.rectangle(img, (570, progreso_barra), (600, 400), (0, 255, 0), -1)
         cv2.putText(img, f'{int(progreso)}%', (570, 140),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+    
+
 
     if feedback:
         for i, linea in enumerate(feedback.split("\n")):
