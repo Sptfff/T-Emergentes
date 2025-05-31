@@ -63,8 +63,6 @@ class Flexion(Ejercicio_interfaz):
         if angulo_codo > 130:  # No ha bajado suficiente
             errores.append("Baja más para completar la flexión.")
 
-        # (Opcional: podrías agregar si los codos se abren lateralmente con una lógica más compleja)
-
         # Generar feedback
         if errores:
             self.feedback = "\n".join(errores)

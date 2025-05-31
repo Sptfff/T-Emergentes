@@ -98,7 +98,7 @@ class Sentadilla(Ejercicio_interfaz):
 
         errores = []
 
-        if angulo_cadera < 100:
+        if angulo_cadera < 150:
             errores.append("Cuidado con la retroversion pelvica.")
         if angulo_rodilla > 120:
             errores.append("Debes bajar mas para completar la sentadilla.")

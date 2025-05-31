@@ -40,3 +40,5 @@ def calcular_angulo(p1, p2, p3):
     if angulo < 0:
         angulo += 360
     return angulo
+
+

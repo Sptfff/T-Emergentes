@@ -54,7 +54,7 @@ def evento_click(evento, x, y, flags, param):
 
 cv2.namedWindow("Entrenador")
 cv2.setMouseCallback("Entrenador", evento_click)
-
+erroresTotales = []
 while True:
     exito, img = cap.read()
     img = cv2.flip(img, 1)
@@ -99,6 +99,7 @@ while True:
     if empezado and not serie_finalizada:
         if puntos and len(puntos) > 32:
             feedback, progreso = verificador.verificar(puntos)
+            erroresTotales.append(feedback)
             angulo_prom = (
                 calcular_angulo(puntos[23], puntos[25], puntos[27]) +
                 calcular_angulo(puntos[24], puntos[26], puntos[28])
@@ -146,6 +147,27 @@ while True:
                     cv2.FONT_HERSHEY_SIMPLEX, 1.2, (0, 255, 0), 2)
         cv2.putText(img, "Haz click en EMPEZAR para reiniciar", (50, 300),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.8, (200, 200, 200), 1)
+        
+        contador_errores = {}
+        for feedback in erroresTotales:
+            if not feedback:
+                continue
+            lineas = feedback.split("\n")
+            for linea in lineas:
+                if linea.strip() == "":
+                    continue
+                contador_errores[linea] = contador_errores.get(linea, 0) + 1
+
+        errores_ordenados = sorted(contador_errores.items(), key=lambda x: x[1], reverse=True)
+
+        cv2.putText(img, "Errores frecuentes:", (50, 320),
+                    cv2.FONT_HERSHEY_SIMPLEX, 1.0, (255, 100, 100), 2)
+
+        for i, (mensaje, veces) in enumerate(errores_ordenados[:5]):
+            texto = f"- {mensaje} ({veces}x)"
+            cv2.putText(img, texto, (60, 360 + i * 30),
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.7, (100, 100, 255), 2)
+
 
     cv2.imshow("Entrenador", img)
 
