@@ -24,20 +24,35 @@ class PantallaResumen(tk.Frame):
         label_reps.pack(pady=20)
 
         consejos = {
-            "pies_en_linea":"Separa un poco los pies",
-            "pies_juntos": "Separa un poco los pies",
-            "rodilla_delantera_pasada": "Adelantas mucho la rodilla delantera, no dejes que sobrepase a tu pie delantero",
-            "espalda_inclinada": "Mantén la espalda más recta",
-            "tobillos_no_apoyados": "Apoya bien los tobillos",
-            "tronco_inclinado":"Mantén la espalda más recta",
-            "tobillo_trasero_despegado":"Apoya bien los tobillos",
-            "rodillas_hacia_adentro":"Evita que las rodillas se muevan hacia adentro",
-            "rodillas_no_alineadas":"Alinea tus rodillas con los pies",
-            "equilibrio_inestable":"Mantén el equilibrio",
-            "pierna_trasera_sin_apoyo":"Apoya completamente la pierna trasera",
-            "angulo_rodilla_excesivo":"Evita un angulo demasiado agudo de rodilla",
-            "pie_trasero_no_apoyado":"Apoya el pie trasero en el suelo",
+            # sentadilla tradicional
+            "pies_juntos": "Abre más los pies para mejorar estabilidad",
+            "espalda_inclinada": "Endereza la espalda, mantén el pecho erguido",
+            "tobillos_no_apoyados": "Apoya firmemente los talones en el suelo",
+            "rodillas_hacia_adentro": "Empuja las rodillas hacia afuera",
+            "rodillas_no_alineadas": "Alinea rodillas con la dirección de los pies",
+
+            # sentadilla con salto
+            "sin_salto": "Impúlsate hacia arriba, ¡salta con energía!",
+            "salto_insuficiente": "Salta con más fuerza y controla la caída",
+
+            # sentadilla sumo
+            "rodillas_no_abiertas": "Abre más las piernas, te servirá para bajar más profundo",
+
+
+            # step-ups 
+            "rodilla_delantera_pasada": "Evita que la rodilla delantera sobrepase el pie",
+            "equilibrio_inestable": "Activa el core y estabiliza el cuerpo",
+            "pierna_trasera_sin_apoyo": "Usa ambas piernas, apoya bien la trasera",
+            "angulo_rodilla_excesivo": "Evita doblar demasiado la rodilla, controla el movimiento",
+            "pie_trasero_no_apoyado": "Mantén el pie trasero en contacto con el suelo",
+
+            # estocada
+            "pies_en_linea": "Separa más los pies para ganar equilibrio",
+            "tronco_inclinado": "Mantén el torso erguido y la mirada al frente",
+            "tobillo_trasero_despegado": "Apoya bien el pie trasero para mayor estabilidad",
+            "paso_corto": "Da un paso más largo para mejorar la forma",
         }
+
 
         # Filtramos y ordenamos los errores
         errores_filtrados = [

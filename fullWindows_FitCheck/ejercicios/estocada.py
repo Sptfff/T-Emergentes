@@ -12,14 +12,16 @@ class Estocada(EjercicioBase):
             "pies_en_linea": 0,
             "rodilla_delantera_pasada": 0,
             "tronco_inclinado": 0,
-            "tobillo_trasero_despegado": 0
+            "tobillo_trasero_despegado": 0,
+            "paso_corto": 0
         }
         # Flags para evitar múltiples conteos por repetición
         self.error_flags = {
             "pies_en_linea": False,
             "rodilla_delantera_pasada": False,
             "tronco_inclinado": False,
-            "tobillo_trasero_despegado": False
+            "tobillo_trasero_despegado": False,
+            "paso_corto": False
         }
 
     def procesar_pose(self, landmarks):
@@ -74,6 +76,12 @@ class Estocada(EjercicioBase):
             self.errores_contador["tobillo_trasero_despegado"] += 1
             self.error_flags["tobillo_trasero_despegado"] = True
             mensajes.append("Apoya el pie trasero correctamente")
+        # Medir distancia horizontal entre tobillo delantero y trasero
+        distancia_pasos = abs(tobillo_d[0] - tobillo_i[0])
+        if distancia_pasos < 0.15 and not self.error_flags["paso_corto"]:
+            self.errores_contador["paso_corto"] += 1
+            self.error_flags["paso_corto"] = True
+            mensajes.append("Da un paso más largo para mejorar estabilidad y forma")
 
         if nueva_repeticion:
             for key in self.error_flags:

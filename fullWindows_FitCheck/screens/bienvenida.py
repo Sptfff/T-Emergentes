@@ -13,7 +13,7 @@ class BienvenidaScreen(tk.Frame):
         title.pack(pady=40)
 
         # Botones de ejercicios
-        ejercicios = ["Sentadillas", "Estocadas", "Step-Ups"]
+        ejercicios = ["Sentadilla tradicional", "Estocadas", "Step-Ups", "Sentadilla con salto", "Sentadilla sumo"]
         for ejercicio in ejercicios:
             boton = tk.Button(self, text=ejercicio, font=("Helvetica", 18),
                               width=20, command=lambda e=ejercicio: self.seleccionar_ejercicio(e))

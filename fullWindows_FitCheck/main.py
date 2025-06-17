@@ -1,6 +1,6 @@
 import tkinter as tk
 from screens.bienvenida import BienvenidaScreen
-from screens.seleccion_reps import SeleccionRepsScreen  # 👈 nuevo import
+from screens.seleccion_reps import SeleccionRepsScreen  
 from screens.entrenamiento import EntrenamientoScreen
 from screens.resumen import PantallaResumen
 
@@ -24,7 +24,12 @@ class FitCheckApp:
     def mostrar_seleccion_reps(self, ejercicio):
         self.ejercicio_seleccionado = ejercicio
         self._cambiar_pantalla(
-            SeleccionRepsScreen(self.root, self.iniciar_entrenamiento)
+            SeleccionRepsScreen(
+                self.root,
+                self.iniciar_entrenamiento,
+                self.mostrar_bienvenida,
+                ejercicio
+            )
         )
 
     def iniciar_entrenamiento(self, reps_seleccionadas):

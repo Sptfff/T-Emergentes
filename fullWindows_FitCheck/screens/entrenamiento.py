@@ -5,9 +5,11 @@ from PIL import Image, ImageTk
 import mediapipe as mp
 import time
 
+from ejercicios.sumo import SentadillaSumo
 from ejercicios.sentadilla import Sentadilla
 from ejercicios.estocada import Estocada
 from ejercicios.step_up import StepUp
+from ejercicios.consalto import SentadillaConSalto
 
 class EntrenamientoScreen(tk.Frame):
     def __init__(self, master, ejercicio, callback_resumen=None, repeticiones_objetivo=10):
@@ -22,12 +24,16 @@ class EntrenamientoScreen(tk.Frame):
         self.callback_resumen = callback_resumen
         self.mensaje_guia = ""
 
-        if self.ejercicio == "Sentadillas":
+        if self.ejercicio == "Sentadilla tradicional":
             self.ejercicio_obj = Sentadilla()
         elif self.ejercicio == "Estocadas":
             self.ejercicio_obj = Estocada()
         elif self.ejercicio == "Step-Ups":
             self.ejercicio_obj = StepUp()
+        elif self.ejercicio == "Sentadilla con salto":
+            self.ejercicio_obj = SentadillaConSalto()
+        elif self.ejercicio == "Sentadilla sumo":
+            self.ejercicio_obj = SentadillaSumo()
         else:
             raise ValueError(f"Ejercicio desconocido: {self.ejercicio}")
 
@@ -39,8 +45,8 @@ class EntrenamientoScreen(tk.Frame):
             min_detection_confidence=0.5,
             min_tracking_confidence=0.5
         )
-
-        self.cap = cv2.VideoCapture(0) 
+        self.cap = cv2.VideoCapture(0)
+        #self.cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
         self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
         self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 
