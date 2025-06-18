@@ -45,8 +45,8 @@ class EntrenamientoScreen(tk.Frame):
             min_detection_confidence=0.5,
             min_tracking_confidence=0.5
         )
-        self.cap = cv2.VideoCapture(0)
-        #self.cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
+        #self.cap = cv2.VideoCapture(0)
+        self.cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
         self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
         self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 
