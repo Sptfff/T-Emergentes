@@ -16,70 +16,6 @@ class SentadillaSumo(EjercicioBase):
             "tobillos_no_apoyados": 0
         }
         self.error_flags = {key: False for key in self.errores_contador}
-        
-        # Configuración del sistema de fases
-        self.fases_config = {
-            "reposo_inicial": {
-                "rango_progreso": (0.0, 0.0),
-                "condicion_transicion": lambda ang, obj: ang < 155 and not obj.esta_en_reposo(),
-                "siguiente_fase": "descendente",
-                "mensaje": "Comienza a bajar con piernas abiertas"
-            },
-            "descendente": {
-                "rango_progreso": (0.0, 0.5),
-                "angulo_inicio": 160,
-                "angulo_fin": 105,
-                "condicion_transicion": lambda ang, obj: ang < 115,
-                "siguiente_fase": "punto_bajo",
-                "mensaje": "Continúa bajando"
-            },
-            "punto_bajo": {
-                "rango_progreso": (0.5, 0.5),
-                "condicion_transicion": lambda ang, obj: ang > 110 and not obj.esta_en_reposo(),
-                "siguiente_fase": "ascendente",
-                "mensaje": "¡Bien! Ahora sube"
-            },
-            "ascendente": {
-                "rango_progreso": (0.5, 1.0),
-                "angulo_inicio": 105,
-                "angulo_fin": 160,
-                "condicion_transicion": lambda ang, obj: ang > 155,
-                "siguiente_fase": "completado",
-                "mensaje": "Continúa subiendo"
-            },
-            "completado": {
-                "rango_progreso": (1.0, 1.0),
-                "condicion_transicion": lambda ang, obj: False,
-                "siguiente_fase": "reposo_inicial",
-                "mensaje": "¡Repetición completa!"
-            }
-        }
-        
-        self.fase_actual = "reposo_inicial"
-    
-    def calcular_progreso_por_fase(self, angulo):
-        """Calcula progreso visual basado en fase actual y ángulo"""
-        fase = self.fases_config.get(self.fase_actual, {})
-        rango = fase.get("rango_progreso", (0.0, 0.0))
-        
-        if self.fase_actual in ["reposo_inicial", "punto_bajo", "completado"]:
-            return rango[0]
-        
-        elif self.fase_actual == "descendente":
-            ang_inicio = fase.get("angulo_inicio", 160)
-            ang_fin = fase.get("angulo_fin", 105)
-            progreso_normalizado = (ang_inicio - angulo) / (ang_inicio - ang_fin)
-            progreso_normalizado = max(0.0, min(1.0, progreso_normalizado))
-            return rango[0] + (rango[1] - rango[0]) * progreso_normalizado
-        
-        elif self.fase_actual == "ascendente":
-            ang_inicio = fase.get("angulo_inicio", 105)
-            ang_fin = fase.get("angulo_fin", 160)
-            progreso_normalizado = (angulo - ang_inicio) / (ang_fin - ang_inicio)
-            progreso_normalizado = max(0.0, min(1.0, progreso_normalizado))
-            return rango[0] + (rango[1] - rango[0]) * progreso_normalizado
-        
-        return 0.0
 
     def procesar_pose(self, landmarks):
         """
@@ -87,23 +23,36 @@ class SentadillaSumo(EjercicioBase):
         - SIEMPRE: Actualizar estado, progreso, repeticiones
         - CONDICIONAL: Detectar errores de forma
         """
-    def procesar_pose(self, landmarks):
-        """
-        Procesar pose con sistema de fases y detección de errores.
-        """
-        # ===== NIVEL 1: PROCESAMIENTO VISUAL CON SISTEMA DE FASES =====
+        # ===== NIVEL 1: PROCESAMIENTO VISUAL (SIEMPRE) =====
         rodilla = (landmarks['RIGHT_KNEE'].x, landmarks['RIGHT_KNEE'].y)
         cadera = (landmarks['RIGHT_HIP'].x, landmarks['RIGHT_HIP'].y)
         tobillo = (landmarks['RIGHT_ANKLE'].x, landmarks['RIGHT_ANKLE'].y)
 
-        # Calcular ángulo principal
+        # Calcular ángulo principal para estado y progreso
         angulo_rodilla = calcular_angulo(cadera, rodilla, tobillo)
-        self.ultimo_angulo = angulo_rodilla
-        
+
+        umbral_bajada = 105
+        umbral_subida = 160
+
+        nueva_repeticion = False
         mensajes = []
 
-        # Actualizar fase y progreso usando el sistema de fases
-        self.actualizar_fase_y_progreso(angulo_rodilla)
+        # Flujo de repeticiones (SIEMPRE se verifica)
+        if self.estado_actual == "arriba" and angulo_rodilla < umbral_bajada:
+            self.estado_actual = "bajando"
+            
+        elif self.estado_actual == "bajando" and angulo_rodilla > umbral_subida:
+            self.estado_actual = "arriba"
+            self.repeticiones += 1
+            msg_rep = "Buena repeticion!"
+            mensajes.append(msg_rep)
+            self.enviar_audio(msg_rep, es_error=False)
+            nueva_repeticion = True
+
+        # Actualizar progreso (SIEMPRE)
+        self.progreso = (angulo_rodilla - umbral_bajada) / (umbral_subida - umbral_bajada)
+        self.progreso = max(0.0, min(1.0, self.progreso))
+        self.ultimo_angulo = angulo_rodilla
 
         # ===== NIVEL 2: DETECCIÓN DE ERRORES (CONDICIONAL) =====
         if self.debe_verificar_errores():
@@ -156,12 +105,13 @@ class SentadillaSumo(EjercicioBase):
                 mensajes.append(msg)
                 self.enviar_audio(msg, es_error=True)
 
-        # Mensaje por defecto basado en la fase actual
-        if not mensajes and not self.mensaje_cache:
-            fase_config = self.fases_config.get(self.fase_actual, {})
-            mensaje_fase = fase_config.get("mensaje", "")
-            if mensaje_fase:
-                mensajes.append(mensaje_fase)
+        # Resetear flags si hay nueva repetición
+        if nueva_repeticion:
+            self.resetear_flags_errores()
+
+        # Mensaje por defecto si no hay errores ni indicaciones
+        if not mensajes and not self.mensaje_cache and self.estado_actual == "arriba":
+            mensajes.append("Baja con control")
 
         # Actualizar mensaje con sistema de cache
         self.actualizar_mensaje_guia(mensajes if mensajes else None)

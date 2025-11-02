@@ -1,0 +1,1288 @@
+2025-10-23 00:54:22 - FitCheck - INFO - ============================================================
+2025-10-23 00:54:22 - FitCheck - INFO - Iniciando FitCheck Application
+2025-10-23 00:54:22 - FitCheck - INFO - ============================================================
+2025-10-23 00:54:25 - FitCheck - INFO - Ejercicio seleccionado: Sentadilla tradicional
+2025-10-23 00:54:25 - FitCheck - INFO - GIF cargado exitosamente: c:\Users\matia\OneDrive\Escritorio\T-Emergentes-1\fullWindows_FitCheck\videos\sentadillas_tradicional.gif
+2025-10-23 00:54:27 - FitCheck - INFO - Usuario seleccionó 1 repeticiones para Sentadilla tradicional
+2025-10-23 00:54:27 - FitCheck - INFO - Inicializando entrenamiento: Sentadilla tradicional
+2025-10-23 00:54:27 - FitCheck - INFO - Iniciando detección de cámara...
+2025-10-23 00:54:27 - FitCheck - DEBUG - Probando cámara 0 con backend CAP_DSHOW
+2025-10-23 00:54:28 - FitCheck - INFO - ✓ Cámara inicializada: índice=0, backend=CAP_DSHOW
+2025-10-23 00:54:28 - FitCheck - INFO -   Resolución: 640x480
+2025-10-23 00:54:29 - FitCheck - INFO - Persona detectada en cámara
+2025-10-23 00:54:54 - FitCheck - WARNING - Tiempo de inactividad excedido: 15.0s
+2025-10-23 00:54:55 - FitCheck - INFO - Cámara liberada correctamente
+2025-10-23 00:54:55 - FitCheck - INFO - Destruyendo pantalla de entrenamiento
+2025-10-23 00:54:55 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:55 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:55 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:55 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:55 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:55 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:55 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:56 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:56 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:56 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:56 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:56 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:56 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:56 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:56 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:56 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:57 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:57 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:57 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:57 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:57 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:57 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:57 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:57 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:57 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:58 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:58 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:58 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:58 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:58 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:58 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:58 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:58 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:54:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:55:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:55:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:55:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:55:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:55:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:55:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:55:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:55:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:55:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:55:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:55:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:55:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:55:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:55:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:55:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:55:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:55:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:55:02 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:55:02 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:55:02 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 00:55:02 - FitCheck - INFO - Aplicación cerrada
+2025-10-23 01:09:58 - FitCheck - INFO - ============================================================
+2025-10-23 01:09:58 - FitCheck - INFO - Iniciando FitCheck Application
+2025-10-23 01:09:58 - FitCheck - INFO - ============================================================
+2025-10-23 01:10:17 - FitCheck - INFO - Ejercicio seleccionado: Estocadas
+2025-10-23 01:10:17 - FitCheck - INFO - GIF cargado exitosamente: c:\Users\matia\OneDrive\Escritorio\T-Emergentes-1\fullWindows_FitCheck\videos\estocada.gif
+2025-10-23 01:10:18 - FitCheck - INFO - Usuario seleccionó 1 repeticiones para Estocadas
+2025-10-23 01:10:18 - FitCheck - INFO - Inicializando entrenamiento: Estocadas
+2025-10-23 01:10:18 - FitCheck - INFO - Iniciando detección de cámara...
+2025-10-23 01:10:18 - FitCheck - DEBUG - Probando cámara 0 con backend CAP_DSHOW
+2025-10-23 01:10:20 - FitCheck - INFO - ✓ Cámara inicializada: índice=0, backend=CAP_DSHOW
+2025-10-23 01:10:20 - FitCheck - INFO -   Resolución: 640x480
+2025-10-23 01:10:21 - FitCheck - INFO - Voz seleccionada: Microsoft Sabina Desktop - Spanish (Mexico)
+2025-10-23 01:10:21 - FitCheck - INFO - Motor TTS inicializado correctamente
+2025-10-23 01:10:21 - FitCheck - INFO - Audio loop iniciado
+2025-10-23 01:10:21 - FitCheck - INFO - Thread de audio iniciado
+2025-10-23 01:10:21 - FitCheck - INFO - AudioManager inicializado (habilitado=True)
+2025-10-23 01:10:21 - FitCheck - INFO - Sistema de audio habilitado
+2025-10-23 01:10:21 - FitCheck - INFO - Persona detectada en cámara
+2025-10-23 01:10:32 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Da un paso más largo
+2025-10-23 01:10:32 - FitCheck - DEBUG - Reproduciendo audio [P2]: Da un paso más largo
+2025-10-23 01:10:35 - FitCheck - DEBUG - Audio reproducido correctamente (1 total)
+2025-10-23 01:10:38 - FitCheck - INFO - Objetivo alcanzado: 1/1
+2025-10-23 01:10:38 - FitCheck - INFO - Cámara liberada correctamente
+2025-10-23 01:10:38 - FitCheck - INFO - Destruyendo pantalla de entrenamiento
+2025-10-23 01:10:38 - FitCheck - INFO - Deteniendo sistema de audio...
+2025-10-23 01:10:38 - FitCheck - INFO - Deteniendo AudioManager...
+2025-10-23 01:10:38 - FitCheck - INFO - Audio loop finalizado
+2025-10-23 01:10:38 - FitCheck - INFO - Cola de audio limpiada
+2025-10-23 01:10:38 - FitCheck - INFO - AudioManager detenido. Estadísticas: 1 enviados, 0 bloqueados
+2025-10-23 01:10:39 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:39 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:39 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:39 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:39 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:39 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:39 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:39 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:39 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:40 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:40 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:40 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:40 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:40 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:40 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:40 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:40 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:40 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:41 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:41 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:41 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:41 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:41 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:41 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:41 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:41 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:42 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:42 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:42 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:42 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:42 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:42 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:42 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:42 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:42 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:43 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:43 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:43 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:43 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:43 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:43 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:43 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:43 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:43 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:44 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:44 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:44 - FitCheck - INFO - Usuario salió de la pantalla de resumen
+2025-10-23 01:10:44 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:44 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:44 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:44 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:44 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:44 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:45 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:45 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:45 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:45 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:45 - FitCheck - INFO - Ejercicio seleccionado: Sentadilla tradicional
+2025-10-23 01:10:45 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:45 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:45 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:45 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:45 - FitCheck - INFO - GIF cargado exitosamente: c:\Users\matia\OneDrive\Escritorio\T-Emergentes-1\fullWindows_FitCheck\videos\sentadillas_tradicional.gif
+2025-10-23 01:10:45 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:46 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:46 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:46 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:46 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:46 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:46 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:46 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:46 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:46 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:47 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:47 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:47 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:47 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:47 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:47 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:47 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:47 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:47 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:48 - FitCheck - INFO - Usuario seleccionó 1 repeticiones para Sentadilla tradicional
+2025-10-23 01:10:48 - FitCheck - INFO - Inicializando entrenamiento: Sentadilla tradicional
+2025-10-23 01:10:48 - FitCheck - INFO - Iniciando detección de cámara...
+2025-10-23 01:10:48 - FitCheck - DEBUG - Probando cámara 0 con backend CAP_DSHOW
+2025-10-23 01:10:48 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:48 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:48 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:48 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:48 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:48 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:48 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:48 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:48 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:49 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:49 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:49 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:49 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:49 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:49 - FitCheck - INFO - ✓ Cámara inicializada: índice=0, backend=CAP_DSHOW
+2025-10-23 01:10:49 - FitCheck - INFO -   Resolución: 640x480
+2025-10-23 01:10:49 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:49 - FitCheck - INFO - Voz seleccionada: Microsoft Sabina Desktop - Spanish (Mexico)
+2025-10-23 01:10:49 - FitCheck - INFO - Motor TTS inicializado correctamente
+2025-10-23 01:10:49 - FitCheck - INFO - Audio loop iniciado
+2025-10-23 01:10:49 - FitCheck - INFO - Thread de audio iniciado
+2025-10-23 01:10:49 - FitCheck - INFO - AudioManager inicializado (habilitado=True)
+2025-10-23 01:10:49 - FitCheck - INFO - Sistema de audio habilitado
+2025-10-23 01:10:49 - FitCheck - INFO - Persona detectada en cámara
+2025-10-23 01:10:49 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:49 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:49 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:50 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:50 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:50 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:50 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:50 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:50 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:50 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:50 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:50 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:50 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:51 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:51 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:51 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:51 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:51 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:51 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:51 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:51 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:51 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:51 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:52 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:52 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:52 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:52 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:52 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:52 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:52 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:52 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:52 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:52 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:53 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:53 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:53 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:53 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:53 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:53 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:53 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:53 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:53 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:53 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:54 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:54 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:54 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:54 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:54 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:54 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:54 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:54 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:54 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:54 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:55 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:55 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:55 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:55 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:55 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:55 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:55 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:55 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:55 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:56 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:56 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:56 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:56 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:56 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:56 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:56 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:56 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:56 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:56 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:57 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:57 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:57 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:57 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:57 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:57 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:57 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:57 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:57 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:57 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:58 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:58 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:58 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:58 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:58 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:58 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:58 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:58 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:58 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:58 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:10:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:01 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Separa los pies
+2025-10-23 01:11:01 - FitCheck - DEBUG - Reproduciendo audio [P2]: Separa los pies
+2025-10-23 01:11:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:01 - FitCheck - INFO - Objetivo alcanzado: 1/1
+2025-10-23 01:11:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:02 - FitCheck - INFO - Cámara liberada correctamente
+2025-10-23 01:11:02 - FitCheck - INFO - Destruyendo pantalla de entrenamiento
+2025-10-23 01:11:02 - FitCheck - INFO - Deteniendo sistema de audio...
+2025-10-23 01:11:02 - FitCheck - INFO - Deteniendo AudioManager...
+2025-10-23 01:11:02 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:02 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:02 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:02 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:02 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:02 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:02 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:02 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:02 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:03 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:03 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:03 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:03 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:03 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:03 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:03 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:03 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:04 - FitCheck - INFO - Cola de audio limpiada
+2025-10-23 01:11:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:04 - FitCheck - DEBUG - Audio reproducido correctamente (1 total)
+2025-10-23 01:11:04 - FitCheck - INFO - Audio loop finalizado
+2025-10-23 01:11:04 - FitCheck - INFO - AudioManager detenido. Estadísticas: 1 enviados, 0 bloqueados
+2025-10-23 01:11:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 01:11:12 - FitCheck - INFO - Aplicación cerrada
+2025-10-23 01:11:14 - FitCheck - INFO - ============================================================
+2025-10-23 01:11:14 - FitCheck - INFO - Iniciando FitCheck Application
+2025-10-23 01:11:14 - FitCheck - INFO - ============================================================
+2025-10-23 01:11:16 - FitCheck - INFO - Aplicación cerrada
+2025-10-23 11:23:23 - FitCheck - INFO - ============================================================
+2025-10-23 11:23:23 - FitCheck - INFO - Iniciando FitCheck Application
+2025-10-23 11:23:23 - FitCheck - INFO - ============================================================
+2025-10-23 11:23:29 - FitCheck - INFO - Ejercicio seleccionado: Sentadilla tradicional
+2025-10-23 11:23:29 - FitCheck - INFO - GIF cargado exitosamente: c:\Users\matia\OneDrive\Escritorio\T-Emergentes-1\fullWindows_FitCheck\videos\sentadillas_tradicional.gif
+2025-10-23 11:23:31 - FitCheck - INFO - Usuario seleccionó 1 repeticiones para Sentadilla tradicional
+2025-10-23 11:23:31 - FitCheck - INFO - Inicializando entrenamiento: Sentadilla tradicional
+2025-10-23 11:23:31 - FitCheck - INFO - Iniciando detección de cámara...
+2025-10-23 11:23:31 - FitCheck - DEBUG - Probando cámara 0 con backend CAP_DSHOW
+2025-10-23 11:23:33 - FitCheck - INFO - ✓ Cámara inicializada: índice=0, backend=CAP_DSHOW
+2025-10-23 11:23:33 - FitCheck - INFO -   Resolución: 640x480
+2025-10-23 11:23:33 - FitCheck - INFO - Voz seleccionada: Microsoft Sabina Desktop - Spanish (Mexico)
+2025-10-23 11:23:33 - FitCheck - INFO - Motor TTS inicializado correctamente
+2025-10-23 11:23:33 - FitCheck - INFO - Audio loop iniciado
+2025-10-23 11:23:33 - FitCheck - INFO - Thread de audio iniciado
+2025-10-23 11:23:33 - FitCheck - INFO - AudioManager inicializado (habilitado=True)
+2025-10-23 11:23:33 - FitCheck - INFO - Sistema de audio habilitado
+2025-10-23 11:23:38 - FitCheck - INFO - Persona detectada en cámara
+2025-10-23 11:23:40 - FitCheck - DEBUG - Mensaje agregado a cola [P4]: Preparate
+2025-10-23 11:23:40 - FitCheck - DEBUG - Reproduciendo audio [P4]: Preparate
+2025-10-23 11:23:42 - FitCheck - DEBUG - Audio reproducido correctamente (1 total)
+2025-10-23 11:23:43 - FitCheck - INFO - Entrenamiento iniciado después de countdown
+2025-10-23 11:23:43 - FitCheck - DEBUG - Mensaje agregado a cola [P4]: Comienza
+2025-10-23 11:23:43 - FitCheck - DEBUG - Reproduciendo audio [P4]: Comienza
+2025-10-23 11:23:44 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Apoya bien los tobillos
+2025-10-23 11:23:44 - FitCheck - DEBUG - Mensaje agregado a cola [P1]: Evita que las rodillas se muevan hacia adentro
+2025-10-23 11:23:45 - FitCheck - DEBUG - Audio reproducido correctamente (2 total)
+2025-10-23 11:23:45 - FitCheck - DEBUG - Reproduciendo audio [P1]: Evita que las rodillas se muevan hacia adentro
+2025-10-23 11:23:48 - FitCheck - DEBUG - Audio reproducido correctamente (3 total)
+2025-10-23 11:23:48 - FitCheck - DEBUG - Reproduciendo audio [P2]: Apoya bien los tobillos
+2025-10-23 11:23:50 - FitCheck - DEBUG - Audio reproducido correctamente (4 total)
+2025-10-23 11:23:54 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Separa los pies
+2025-10-23 11:23:54 - FitCheck - DEBUG - Reproduciendo audio [P2]: Separa los pies
+2025-10-23 11:23:56 - FitCheck - DEBUG - Audio reproducido correctamente (5 total)
+2025-10-23 11:23:58 - FitCheck - WARNING - Tiempo de inactividad excedido: 15.1s
+2025-10-23 11:23:59 - FitCheck - INFO - Cámara liberada correctamente
+2025-10-23 11:23:59 - FitCheck - INFO - Destruyendo pantalla de entrenamiento
+2025-10-23 11:23:59 - FitCheck - INFO - Deteniendo sistema de audio...
+2025-10-23 11:23:59 - FitCheck - INFO - Deteniendo AudioManager...
+2025-10-23 11:23:59 - FitCheck - INFO - Audio loop finalizado
+2025-10-23 11:23:59 - FitCheck - INFO - Cola de audio limpiada
+2025-10-23 11:23:59 - FitCheck - INFO - AudioManager detenido. Estadísticas: 5 enviados, 0 bloqueados
+2025-10-23 11:23:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:23:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:23:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:23:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:23:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:23:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:23:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:23:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:23:59 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:00 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:01 - FitCheck - INFO - Usuario salió de la pantalla de resumen
+2025-10-23 11:24:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:01 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:02 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:02 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:02 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:02 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:02 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:02 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:02 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:02 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:02 - FitCheck - INFO - Ejercicio seleccionado: Step-Ups
+2025-10-23 11:24:02 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:02 - FitCheck - INFO - GIF cargado exitosamente: c:\Users\matia\OneDrive\Escritorio\T-Emergentes-1\fullWindows_FitCheck\videos\stepups.gif
+2025-10-23 11:24:03 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:03 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:03 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:03 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:03 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:03 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:03 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:03 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:03 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:04 - FitCheck - INFO - Usuario seleccionó 1 repeticiones para Step-Ups
+2025-10-23 11:24:04 - FitCheck - INFO - Inicializando entrenamiento: Step-Ups
+2025-10-23 11:24:04 - FitCheck - INFO - Iniciando detección de cámara...
+2025-10-23 11:24:04 - FitCheck - DEBUG - Probando cámara 0 con backend CAP_DSHOW
+2025-10-23 11:24:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:04 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:05 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:06 - FitCheck - INFO - ✓ Cámara inicializada: índice=0, backend=CAP_DSHOW
+2025-10-23 11:24:06 - FitCheck - INFO -   Resolución: 640x480
+2025-10-23 11:24:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:06 - FitCheck - INFO - Voz seleccionada: Microsoft Sabina Desktop - Spanish (Mexico)
+2025-10-23 11:24:06 - FitCheck - INFO - Motor TTS inicializado correctamente
+2025-10-23 11:24:06 - FitCheck - INFO - Audio loop iniciado
+2025-10-23 11:24:06 - FitCheck - INFO - Thread de audio iniciado
+2025-10-23 11:24:06 - FitCheck - INFO - AudioManager inicializado (habilitado=True)
+2025-10-23 11:24:06 - FitCheck - INFO - Sistema de audio habilitado
+2025-10-23 11:24:06 - FitCheck - INFO - Persona detectada en cámara
+2025-10-23 11:24:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:06 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:07 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:08 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:09 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:10 - FitCheck - DEBUG - Mensaje agregado a cola [P4]: Preparate
+2025-10-23 11:24:10 - FitCheck - DEBUG - Reproduciendo audio [P4]: Preparate
+2025-10-23 11:24:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:12 - FitCheck - DEBUG - Audio reproducido correctamente (1 total)
+2025-10-23 11:24:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:13 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:13 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:13 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:13 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:13 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:13 - FitCheck - INFO - Entrenamiento iniciado después de countdown
+2025-10-23 11:24:13 - FitCheck - DEBUG - Mensaje agregado a cola [P4]: Comienza
+2025-10-23 11:24:13 - FitCheck - DEBUG - Reproduciendo audio [P4]: Comienza
+2025-10-23 11:24:13 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:13 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:13 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:13 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:13 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:15 - FitCheck - DEBUG - Audio reproducido correctamente (2 total)
+2025-10-23 11:24:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:17 - FitCheck - INFO - Objetivo alcanzado: 1/1
+2025-10-23 11:24:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:17 - FitCheck - INFO - Cámara liberada correctamente
+2025-10-23 11:24:17 - FitCheck - INFO - Destruyendo pantalla de entrenamiento
+2025-10-23 11:24:17 - FitCheck - INFO - Deteniendo sistema de audio...
+2025-10-23 11:24:17 - FitCheck - INFO - Deteniendo AudioManager...
+2025-10-23 11:24:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:17 - FitCheck - INFO - Audio loop finalizado
+2025-10-23 11:24:17 - FitCheck - INFO - Cola de audio limpiada
+2025-10-23 11:24:17 - FitCheck - INFO - AudioManager detenido. Estadísticas: 2 enviados, 0 bloqueados
+2025-10-23 11:24:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:26 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:26 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:26 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:26 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:26 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:26 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:26 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:26 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:26 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:26 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:26 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:26 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:26 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:26 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:26 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:26 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:26 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:26 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:27 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:27 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:27 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:27 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:27 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:24:27 - FitCheck - INFO - Aplicación cerrada
+2025-10-23 11:27:19 - FitCheck - INFO - ============================================================
+2025-10-23 11:27:19 - FitCheck - INFO - Iniciando FitCheck Application
+2025-10-23 11:27:19 - FitCheck - INFO - ============================================================
+2025-10-23 11:27:29 - FitCheck - INFO - Ejercicio seleccionado: Sentadilla tradicional
+2025-10-23 11:27:29 - FitCheck - INFO - GIF cargado exitosamente: c:\Users\matia\OneDrive\Escritorio\T-Emergentes-1\fullWindows_FitCheck\videos\sentadillas_tradicional.gif
+2025-10-23 11:27:46 - FitCheck - INFO - Usuario seleccionó 1 repeticiones para Sentadilla tradicional
+2025-10-23 11:27:46 - FitCheck - INFO - Inicializando entrenamiento: Sentadilla tradicional
+2025-10-23 11:27:46 - FitCheck - INFO - Iniciando detección de cámara...
+2025-10-23 11:27:46 - FitCheck - DEBUG - Probando cámara 0 con backend CAP_DSHOW
+2025-10-23 11:27:47 - FitCheck - INFO - ✓ Cámara inicializada: índice=0, backend=CAP_DSHOW
+2025-10-23 11:27:47 - FitCheck - INFO -   Resolución: 640x480
+2025-10-23 11:27:48 - FitCheck - INFO - Voz seleccionada: Microsoft Sabina Desktop - Spanish (Mexico)
+2025-10-23 11:27:48 - FitCheck - INFO - Motor TTS inicializado correctamente
+2025-10-23 11:27:48 - FitCheck - INFO - Audio loop iniciado
+2025-10-23 11:27:48 - FitCheck - INFO - Thread de audio iniciado
+2025-10-23 11:27:48 - FitCheck - INFO - AudioManager inicializado (habilitado=True)
+2025-10-23 11:27:48 - FitCheck - INFO - Sistema de audio habilitado
+2025-10-23 11:27:48 - FitCheck - INFO - Persona detectada en cámara
+2025-10-23 11:28:02 - FitCheck - DEBUG - Mensaje agregado a cola [P4]: Preparate
+2025-10-23 11:28:02 - FitCheck - DEBUG - Reproduciendo audio [P4]: Preparate
+2025-10-23 11:28:03 - FitCheck - DEBUG - Audio reproducido correctamente (1 total)
+2025-10-23 11:28:05 - FitCheck - INFO - Entrenamiento iniciado después de countdown
+2025-10-23 11:28:05 - FitCheck - DEBUG - Mensaje agregado a cola [P4]: Comienza
+2025-10-23 11:28:05 - FitCheck - DEBUG - Reproduciendo audio [P4]: Comienza
+2025-10-23 11:28:05 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Separa los pies
+2025-10-23 11:28:05 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Apoya bien los tobillos
+2025-10-23 11:28:05 - FitCheck - DEBUG - Mensaje agregado a cola [P1]: Evita que las rodillas se muevan hacia adentro
+2025-10-23 11:28:06 - FitCheck - DEBUG - Audio reproducido correctamente (2 total)
+2025-10-23 11:28:06 - FitCheck - DEBUG - Reproduciendo audio [P1]: Evita que las rodillas se muevan hacia adentro
+2025-10-23 11:28:09 - FitCheck - INFO - Objetivo alcanzado: 1/1
+2025-10-23 11:28:09 - FitCheck - INFO - Cámara liberada correctamente
+2025-10-23 11:28:09 - FitCheck - INFO - Destruyendo pantalla de entrenamiento
+2025-10-23 11:28:09 - FitCheck - INFO - Deteniendo sistema de audio...
+2025-10-23 11:28:09 - FitCheck - INFO - Deteniendo AudioManager...
+2025-10-23 11:28:09 - FitCheck - DEBUG - Audio reproducido correctamente (3 total)
+2025-10-23 11:28:09 - FitCheck - INFO - Audio loop finalizado
+2025-10-23 11:28:09 - FitCheck - INFO - Cola de audio limpiada
+2025-10-23 11:28:09 - FitCheck - INFO - AudioManager detenido. Estadísticas: 3 enviados, 0 bloqueados
+2025-10-23 11:28:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:12 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:13 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:13 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:13 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:13 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:13 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:13 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:13 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:13 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:13 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:28:18 - FitCheck - INFO - Aplicación cerrada
+2025-10-23 11:28:20 - FitCheck - INFO - ============================================================
+2025-10-23 11:28:20 - FitCheck - INFO - Iniciando FitCheck Application
+2025-10-23 11:28:20 - FitCheck - INFO - ============================================================
+2025-10-23 11:28:22 - FitCheck - INFO - Aplicación cerrada
+2025-10-23 11:28:23 - FitCheck - INFO - ============================================================
+2025-10-23 11:28:23 - FitCheck - INFO - Iniciando FitCheck Application
+2025-10-23 11:28:23 - FitCheck - INFO - ============================================================
+2025-10-23 11:28:25 - FitCheck - INFO - Aplicación cerrada
+2025-10-23 11:37:55 - FitCheck - INFO - ============================================================
+2025-10-23 11:37:55 - FitCheck - INFO - Iniciando FitCheck Application
+2025-10-23 11:37:55 - FitCheck - INFO - ============================================================
+2025-10-23 11:37:59 - FitCheck - INFO - Ejercicio seleccionado: Sentadilla tradicional
+2025-10-23 11:38:00 - FitCheck - INFO - GIF cargado exitosamente: c:\Users\matia\OneDrive\Escritorio\T-Emergentes-1\fullWindows_FitCheck\videos\sentadillas_tradicional.gif
+2025-10-23 11:38:01 - FitCheck - INFO - Usuario seleccionó 1 repeticiones para Sentadilla tradicional
+2025-10-23 11:38:01 - FitCheck - INFO - Inicializando entrenamiento: Sentadilla tradicional
+2025-10-23 11:38:01 - FitCheck - INFO - Iniciando detección de cámara...
+2025-10-23 11:38:01 - FitCheck - DEBUG - Probando cámara 0 con backend CAP_DSHOW
+2025-10-23 11:38:02 - FitCheck - INFO - ✓ Cámara inicializada: índice=0, backend=CAP_DSHOW
+2025-10-23 11:38:02 - FitCheck - INFO -   Resolución: 640x480
+2025-10-23 11:38:03 - FitCheck - INFO - Voz seleccionada: Microsoft Sabina Desktop - Spanish (Mexico)
+2025-10-23 11:38:03 - FitCheck - INFO - Motor TTS inicializado correctamente
+2025-10-23 11:38:03 - FitCheck - INFO - Audio loop iniciado
+2025-10-23 11:38:03 - FitCheck - INFO - Thread de audio iniciado
+2025-10-23 11:38:03 - FitCheck - INFO - AudioManager inicializado (habilitado=True)
+2025-10-23 11:38:03 - FitCheck - INFO - Sistema de audio habilitado
+2025-10-23 11:38:03 - FitCheck - INFO - Persona detectada en cámara
+2025-10-23 11:38:05 - FitCheck - DEBUG - Mensaje agregado a cola [P4]: Preparate
+2025-10-23 11:38:05 - FitCheck - DEBUG - Reproduciendo audio [P4]: Preparate
+2025-10-23 11:38:07 - FitCheck - DEBUG - Audio reproducido correctamente (1 total)
+2025-10-23 11:38:08 - FitCheck - INFO - Entrenamiento iniciado después de countdown
+2025-10-23 11:38:08 - FitCheck - DEBUG - Mensaje agregado a cola [P4]: Comienza
+2025-10-23 11:38:08 - FitCheck - DEBUG - Reproduciendo audio [P4]: Comienza
+2025-10-23 11:38:09 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Separa los pies
+2025-10-23 11:38:09 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Apoya bien los tobillos
+2025-10-23 11:38:09 - FitCheck - DEBUG - Mensaje agregado a cola [P1]: Evita que las rodillas se muevan hacia adentro
+2025-10-23 11:38:10 - FitCheck - DEBUG - Audio reproducido correctamente (2 total)
+2025-10-23 11:38:10 - FitCheck - DEBUG - Reproduciendo audio [P1]: Evita que las rodillas se muevan hacia adentro
+2025-10-23 11:38:11 - FitCheck - INFO - Objetivo alcanzado: 1/1
+2025-10-23 11:38:11 - FitCheck - INFO - Cámara liberada correctamente
+2025-10-23 11:38:11 - FitCheck - INFO - Destruyendo pantalla de entrenamiento
+2025-10-23 11:38:11 - FitCheck - INFO - Deteniendo sistema de audio...
+2025-10-23 11:38:11 - FitCheck - INFO - Deteniendo AudioManager...
+2025-10-23 11:38:13 - FitCheck - DEBUG - Audio reproducido correctamente (3 total)
+2025-10-23 11:38:13 - FitCheck - INFO - Audio loop finalizado
+2025-10-23 11:38:13 - FitCheck - INFO - Cola de audio limpiada
+2025-10-23 11:38:13 - FitCheck - INFO - AudioManager detenido. Estadísticas: 3 enviados, 0 bloqueados
+2025-10-23 11:38:13 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:13 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:13 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:14 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:15 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:16 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:17 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:18 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:19 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:20 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:21 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:22 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:23 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:24 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:25 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:38:25 - FitCheck - INFO - Aplicación cerrada
+2025-10-23 11:51:28 - FitCheck - INFO - ============================================================
+2025-10-23 11:51:28 - FitCheck - INFO - Iniciando FitCheck Application
+2025-10-23 11:51:28 - FitCheck - INFO - ============================================================
+2025-10-23 11:51:29 - FitCheck - INFO - Ejercicio seleccionado: Sentadilla tradicional
+2025-10-23 11:51:30 - FitCheck - INFO - GIF cargado exitosamente: c:\Users\matia\OneDrive\Escritorio\T-Emergentes-1\fullWindows_FitCheck\videos\sentadillas_tradicional.gif
+2025-10-23 11:51:37 - FitCheck - INFO - Usuario seleccionó 9 repeticiones para Sentadilla tradicional
+2025-10-23 11:51:37 - FitCheck - INFO - Inicializando entrenamiento: Sentadilla tradicional
+2025-10-23 11:51:37 - FitCheck - INFO - Iniciando detección de cámara...
+2025-10-23 11:51:37 - FitCheck - DEBUG - Probando cámara 0 con backend CAP_DSHOW
+2025-10-23 11:51:39 - FitCheck - INFO - ✓ Cámara inicializada: índice=0, backend=CAP_DSHOW
+2025-10-23 11:51:39 - FitCheck - INFO -   Resolución: 640x480
+2025-10-23 11:51:40 - FitCheck - INFO - Voz seleccionada: Microsoft Sabina Desktop - Spanish (Mexico)
+2025-10-23 11:51:40 - FitCheck - INFO - Motor TTS inicializado correctamente
+2025-10-23 11:51:40 - FitCheck - INFO - Audio loop iniciado
+2025-10-23 11:51:40 - FitCheck - INFO - Thread de audio iniciado
+2025-10-23 11:51:40 - FitCheck - INFO - AudioManager inicializado (habilitado=True)
+2025-10-23 11:51:40 - FitCheck - INFO - Sistema de audio habilitado
+2025-10-23 11:51:40 - FitCheck - INFO - Persona detectada en cámara
+2025-10-23 11:51:41 - FitCheck - DEBUG - Mensaje agregado a cola [P4]: Preparate
+2025-10-23 11:51:41 - FitCheck - DEBUG - Reproduciendo audio [P4]: Preparate
+2025-10-23 11:51:43 - FitCheck - DEBUG - Audio reproducido correctamente (1 total)
+2025-10-23 11:51:44 - FitCheck - INFO - Entrenamiento iniciado después de countdown
+2025-10-23 11:51:44 - FitCheck - DEBUG - Mensaje agregado a cola [P4]: Comienza
+2025-10-23 11:51:44 - FitCheck - DEBUG - Reproduciendo audio [P4]: Comienza
+2025-10-23 11:51:45 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Separa los pies
+2025-10-23 11:51:45 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Apoya bien los tobillos
+2025-10-23 11:51:45 - FitCheck - DEBUG - Mensaje agregado a cola [P1]: Evita que las rodillas se muevan hacia adentro
+2025-10-23 11:51:46 - FitCheck - DEBUG - Audio reproducido correctamente (2 total)
+2025-10-23 11:51:46 - FitCheck - DEBUG - Reproduciendo audio [P1]: Evita que las rodillas se muevan hacia adentro
+2025-10-23 11:51:49 - FitCheck - DEBUG - Audio reproducido correctamente (3 total)
+2025-10-23 11:51:49 - FitCheck - DEBUG - Reproduciendo audio [P2]: Apoya bien los tobillos
+2025-10-23 11:51:50 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Separa los pies
+2025-10-23 11:51:50 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Apoya bien los tobillos
+2025-10-23 11:51:50 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Evita que las rodillas se muevan hacia adentro
+2025-10-23 11:51:52 - FitCheck - DEBUG - Audio reproducido correctamente (4 total)
+2025-10-23 11:51:52 - FitCheck - DEBUG - Reproduciendo audio [P2]: Separa los pies
+2025-10-23 11:51:54 - FitCheck - DEBUG - Audio reproducido correctamente (5 total)
+2025-10-23 11:51:54 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Separa los pies
+2025-10-23 11:51:54 - FitCheck - DEBUG - Reproduciendo audio [P2]: Separa los pies
+2025-10-23 11:51:54 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Apoya bien los tobillos
+2025-10-23 11:51:54 - FitCheck - DEBUG - Mensaje agregado a cola [P1]: Evita que las rodillas se muevan hacia adentro
+2025-10-23 11:51:55 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Separa los pies
+2025-10-23 11:51:55 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Apoya bien los tobillos
+2025-10-23 11:51:55 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Evita que las rodillas se muevan hacia adentro
+2025-10-23 11:51:56 - FitCheck - DEBUG - Audio reproducido correctamente (6 total)
+2025-10-23 11:51:56 - FitCheck - DEBUG - Reproduciendo audio [P1]: Evita que las rodillas se muevan hacia adentro
+2025-10-23 11:51:59 - FitCheck - DEBUG - Audio reproducido correctamente (7 total)
+2025-10-23 11:51:59 - FitCheck - DEBUG - Reproduciendo audio [P2]: Apoya bien los tobillos
+2025-10-23 11:52:01 - FitCheck - DEBUG - Audio reproducido correctamente (8 total)
+2025-10-23 11:52:10 - FitCheck - WARNING - Tiempo de inactividad excedido: 15.0s
+2025-10-23 11:52:10 - FitCheck - INFO - Cámara liberada correctamente
+2025-10-23 11:52:10 - FitCheck - INFO - Destruyendo pantalla de entrenamiento
+2025-10-23 11:52:10 - FitCheck - INFO - Deteniendo sistema de audio...
+2025-10-23 11:52:10 - FitCheck - INFO - Deteniendo AudioManager...
+2025-10-23 11:52:10 - FitCheck - INFO - Audio loop finalizado
+2025-10-23 11:52:10 - FitCheck - INFO - Cola de audio limpiada
+2025-10-23 11:52:10 - FitCheck - INFO - AudioManager detenido. Estadísticas: 8 enviados, 6 bloqueados
+2025-10-23 11:52:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:52:10 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:52:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:52:11 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-23 11:52:11 - FitCheck - INFO - Aplicación cerrada

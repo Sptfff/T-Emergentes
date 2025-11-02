@@ -1,4 +1,7 @@
 import tkinter as tk
+from utils.logger import get_logger
+
+logger = get_logger()
 
 class PantallaResumen(tk.Frame):
     def __init__(self, root, volver_callback, repeticiones, errores):
@@ -84,5 +87,6 @@ class PantallaResumen(tk.Frame):
         boton_salir.pack(pady=40)
 
     def volver(self):
+        logger.info("Usuario salió de la pantalla de resumen")
         self.destroy()
         self.volver_callback()

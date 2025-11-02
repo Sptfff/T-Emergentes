@@ -1,5 +1,8 @@
 # fitcheck_app/screens/bienvenida.py
 import tkinter as tk
+from utils.logger import get_logger
+
+logger = get_logger()
 
 class BienvenidaScreen(tk.Frame):
     def __init__(self, master, callback_entrenamiento):
@@ -20,6 +23,6 @@ class BienvenidaScreen(tk.Frame):
             boton.pack(pady=10)
 
     def seleccionar_ejercicio(self, ejercicio):
-        print(f"Ejercicio seleccionado: {ejercicio}")
+        logger.info(f"Ejercicio seleccionado: {ejercicio}")
         self.callback_entrenamiento(ejercicio)
 

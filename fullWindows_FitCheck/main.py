@@ -3,6 +3,9 @@ from screens.bienvenida import BienvenidaScreen
 from screens.seleccion_reps import SeleccionRepsScreen  
 from screens.entrenamiento import EntrenamientoScreen
 from screens.resumen import PantallaResumen
+from utils.logger import get_logger
+
+logger = get_logger()
 
 class FitCheckApp:
     def __init__(self, root):
@@ -60,9 +63,19 @@ class FitCheckApp:
         self.pantalla_actual.pack(fill="both", expand=True)
 
 def main():
-    root = tk.Tk()
-    app = FitCheckApp(root)
-    root.mainloop()
+    logger.info("=" * 60)
+    logger.info("Iniciando FitCheck Application")
+    logger.info("=" * 60)
+    
+    try:
+        root = tk.Tk()
+        app = FitCheckApp(root)
+        root.mainloop()
+    except Exception as e:
+        logger.critical(f"Error crítico en aplicación: {e}", exc_info=True)
+        raise
+    finally:
+        logger.info("Aplicación cerrada")
 
 if __name__ == "__main__":
     main()

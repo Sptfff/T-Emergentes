@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import messagebox
 import threading
 import cv2
 from PIL import Image, ImageTk
@@ -10,6 +11,20 @@ from ejercicios.sentadilla import Sentadilla
 from ejercicios.estocada import Estocada
 from ejercicios.step_up import StepUp
 from ejercicios.consalto import SentadillaConSalto
+from utils.camera_manager import CameraManager
+from utils.audio_manager import AudioManager
+from utils.logger import get_logger
+from config import (
+    INACTIVIDAD_MAX,
+    ADVERTENCIA_TIEMPO,
+    FPS_LIMIT,
+    MODEL_COMPLEXITY,
+    MIN_DETECTION_CONFIDENCE,
+    MIN_TRACKING_CONFIDENCE,
+    AUDIO_HABILITADO
+)
+
+logger = get_logger()
 
 class EntrenamientoScreen(tk.Frame):
     def __init__(self, master, ejercicio, callback_resumen=None, repeticiones_objetivo=10):
@@ -37,22 +52,50 @@ class EntrenamientoScreen(tk.Frame):
         else:
             raise ValueError(f"Ejercicio desconocido: {self.ejercicio}")
 
+        # Inicializar MediaPipe
         self.mp_pose = mp.solutions.pose
         self.pose = self.mp_pose.Pose(
             static_image_mode=False,
-            model_complexity=0,
+            model_complexity=MODEL_COMPLEXITY,
             enable_segmentation=False,
-            min_detection_confidence=0.5,
-            min_tracking_confidence=0.5
+            min_detection_confidence=MIN_DETECTION_CONFIDENCE,
+            min_tracking_confidence=MIN_TRACKING_CONFIDENCE
         )
-        #self.cap = cv2.VideoCapture(0)
-        self.cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)
-        self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
-        self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+        
+        # Inicializar cámara con detección automática
+        logger.info(f"Inicializando entrenamiento: {ejercicio}")
+        self.camera_manager = CameraManager()
+        self.cap, camera_index, camera_backend = self.camera_manager.initialize_camera()
+        
+        if self.cap is None:
+            logger.error("No se pudo inicializar la cámara")
+            messagebox.showerror(
+                "Error de Cámara",
+                "No se pudo detectar ninguna cámara.\n\n"
+                "Verifica que:\n"
+                "• La cámara esté conectada\n"
+                "• Ninguna otra aplicación la esté usando\n"
+                "• Los drivers estén instalados"
+            )
+            self.master.after(100, self.master.destroy)
+            return
 
         self.ultima_repeticion_time = time.time()  # Tiempo de la última repetición detectada
-        self.inactividad_max = 15  # segundos máximos sin repetir
-        self.advertencia_tiempo = 5  # segundos para empezar a mostrar contador regresivo
+        self.inactividad_max = INACTIVIDAD_MAX  # segundos máximos sin repetir
+        self.advertencia_tiempo = ADVERTENCIA_TIEMPO  # segundos para empezar a mostrar contador regresivo
+
+        # Contador de inicio
+        self.iniciando = False
+        self.tiempo_inicio_contador = 0
+        self.duracion_countdown = 3  # 3 segundos de cuenta regresiva
+
+        # Inicializar gestor de audio
+        self.audio_manager = AudioManager(habilitado=AUDIO_HABILITADO)
+        
+        # Asignar audio manager al ejercicio
+        self.ejercicio_obj.set_audio_manager(self.audio_manager)
+        
+        logger.info(f"Sistema de audio {'habilitado' if AUDIO_HABILITADO else 'deshabilitado'}")
 
         self.create_widgets()
 
@@ -63,12 +106,45 @@ class EntrenamientoScreen(tk.Frame):
         main_frame = tk.Frame(self)
         main_frame.pack(fill="both", expand=True)
 
-        top_frame = tk.Frame(main_frame)
-        top_frame.pack(pady=10)
-        center_top = tk.Frame(top_frame)
-        center_top.pack()
-        self.video_frame = tk.Label(center_top)
+        # Frame superior para mensajes (fuera del video)
+        mensaje_frame = tk.Frame(main_frame, bg="#2c3e50", height=80)
+        mensaje_frame.pack(fill="x", padx=10, pady=(10, 5))
+        mensaje_frame.pack_propagate(False)
+        
+        self.mensaje_guia_label = tk.Label(
+            mensaje_frame,
+            text="",
+            font=("Helvetica", 18, "bold"),
+            fg="#ecf0f1",
+            bg="#2c3e50",
+            wraplength=800,
+            justify="center"
+        )
+        self.mensaje_guia_label.pack(expand=True)
+
+        # Frame central para video + barra de progreso
+        center_frame = tk.Frame(main_frame)
+        center_frame.pack(pady=10)
+        
+        # Video a la izquierda
+        self.video_frame = tk.Label(center_frame)
         self.video_frame.grid(row=0, column=0, padx=10)
+        
+        # Barra de progreso a la derecha (Canvas)
+        barra_frame = tk.Frame(center_frame, bg="#34495e")
+        barra_frame.grid(row=0, column=1, padx=10, sticky="ns")
+        
+        tk.Label(barra_frame, text="Progreso", font=("Helvetica", 12, "bold"),
+                bg="#34495e", fg="white").pack(pady=5)
+        
+        self.barra_canvas = tk.Canvas(barra_frame, width=80, height=400, 
+                                      bg="#34495e", highlightthickness=0)
+        self.barra_canvas.pack(pady=10)
+        
+        self.porcentaje_label = tk.Label(barra_frame, text="0%", 
+                                         font=("Helvetica", 16, "bold"),
+                                         bg="#34495e", fg="white")
+        self.porcentaje_label.pack(pady=5)
 
         bottom_frame = tk.Frame(main_frame)
         bottom_frame.pack(pady=20)
@@ -140,11 +216,15 @@ class EntrenamientoScreen(tk.Frame):
         self.inactividad_label.pack(side="left", padx=20)
 
     def iniciar_entrenamiento(self):
-        self.running = True
-        self.repeticiones = 0
-        self.ultima_repeticion_time = time.time()
-        self.safe_update_estado(f"Repeticiones: {self.repeticiones}/{self.repeticiones_objetivo}", "black")
+        """Inicia el countdown de 3 segundos antes de empezar"""
+        self.iniciando = True
+        self.tiempo_inicio_contador = time.time()
+        self.safe_update_estado("Preparate...", "orange")
         self.actualizar_botones()
+        
+        # Enviar audio de preparación
+        if hasattr(self, 'audio_manager') and self.audio_manager:
+            self.audio_manager.agregar_info("Preparate")
 
     def detener_entrenamiento(self):
         self.running = False
@@ -157,53 +237,100 @@ class EntrenamientoScreen(tk.Frame):
         self.actualizar_botones()
 
     def finalizar_entrenamiento(self):
+        """Finaliza el entrenamiento y libera recursos"""
+        logger.info(f"Finalizando entrenamiento: {self.repeticiones} repeticiones")
         self.running = False
-        if self.cap.isOpened():
-            self.cap.release()
+        
+        try:
+            self.camera_manager.release()
+        except Exception as e:
+            logger.error(f"Error al liberar cámara: {e}")
+        
         if self.callback_resumen:
             self.callback_resumen(self.repeticiones, self.ejercicio_obj.errores_contador)
 
     def video_loop(self):
-        fps_limit = 15
+        """Loop principal de procesamiento de video con control de FPS"""
+        fps_limit = FPS_LIMIT
         prev_time = 0
 
         while True:
-            current_time = time.time()
-            if current_time - prev_time < 1 / fps_limit:
-                time.sleep(0.01)
-                continue
-            prev_time = current_time
+            try:
+                current_time = time.time()
+                if current_time - prev_time < 1 / fps_limit:
+                    time.sleep(0.01)
+                    continue
+                prev_time = current_time
 
-            ret, frame = self.cap.read()
-            if not ret:
-                continue
+                ret, frame = self.camera_manager.read()
+                if not ret or frame is None:
+                    logger.warning("No se pudo leer frame de la cámara")
+                    time.sleep(0.1)
+                    continue
 
-            frame = cv2.flip(frame, 1)
-            rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            results = self.pose.process(rgb)
+                frame = cv2.flip(frame, 1)
+                rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+                results = self.pose.process(rgb)
 
-            if results.pose_landmarks:
-                if not self.persona_detectada:
-                    self.persona_detectada = True
+                if results.pose_landmarks:
+                    if not self.persona_detectada:
+                        self.persona_detectada = True
+                        logger.info("Persona detectada en cámara")
 
-                mp.solutions.drawing_utils.draw_landmarks(
-                    frame, results.pose_landmarks, self.mp_pose.POSE_CONNECTIONS)
+                    mp.solutions.drawing_utils.draw_landmarks(
+                        frame, results.pose_landmarks, self.mp_pose.POSE_CONNECTIONS)
 
-                if self.running:
-                    frame = self.detectar_ejercicio(results.pose_landmarks, frame)
+                    # Manejar countdown de inicio
+                    if self.iniciando:
+                        tiempo_transcurrido = time.time() - self.tiempo_inicio_contador
+                        tiempo_restante = self.duracion_countdown - tiempo_transcurrido
+                        
+                        if tiempo_restante > 0:
+                            # Mostrar countdown en pantalla
+                            numero = int(tiempo_restante) + 1
+                            cv2.putText(frame, str(numero), 
+                                       (frame.shape[1]//2 - 50, frame.shape[0]//2), 
+                                       cv2.FONT_HERSHEY_SIMPLEX, 5, (0, 255, 0), 10)
+                            self.safe_update_estado(f"Comenzando en {numero}...", "orange")
+                        else:
+                            # Countdown terminado, iniciar entrenamiento
+                            self.iniciando = False
+                            self.running = True
+                            self.repeticiones = 0
+                            self.ultima_repeticion_time = time.time()
+                            self.safe_update_estado(f"Repeticiones: {self.repeticiones}/{self.repeticiones_objetivo}", "black")
+                            logger.info("Entrenamiento iniciado después de countdown")
+                            
+                            # Audio de inicio
+                            if hasattr(self, 'audio_manager') and self.audio_manager:
+                                self.audio_manager.agregar_info("Comienza")
+                    
+                    elif self.running:
+                        frame = self.detectar_ejercicio(results.pose_landmarks, frame)
+                    else:
+                        self.safe_update_estado("Persona detectada con éxito", "green")
                 else:
-                    self.safe_update_estado("Persona detectada con éxito", "green")
-            else:
-                if self.persona_detectada:
-                    self.persona_detectada = False
-                if not self.running:
-                    self.safe_update_estado("Esperando persona detectada...", "red")
+                    if self.persona_detectada:
+                        self.persona_detectada = False
+                        logger.info("Persona ya no detectada")
+                    
+                    # Si estaba en countdown y se pierde la persona, cancelar
+                    if self.iniciando:
+                        self.iniciando = False
+                        self.safe_update_estado("Countdown cancelado - Persona no detectada", "red")
+                    
+                    if not self.running and not self.iniciando:
+                        self.safe_update_estado("Esperando persona detectada...", "red")
 
-            img = Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
-            imgtk = ImageTk.PhotoImage(image=img)
-            self.safe_update_video(imgtk)
+                img = Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
+                imgtk = ImageTk.PhotoImage(image=img)
+                self.safe_update_video(imgtk)
 
-            self.master.after(0, self.actualizar_botones)
+                self.master.after(0, self.actualizar_botones)
+                
+            except Exception as e:
+                logger.error(f"Error en video_loop: {e}")
+                time.sleep(0.1)
 
     def detectar_ejercicio(self, pose_landmarks, frame):
         landmarks = {self.mp_pose.PoseLandmark(i).name: lm for i, lm in enumerate(pose_landmarks.landmark)}
@@ -220,6 +347,10 @@ class EntrenamientoScreen(tk.Frame):
             self.ultima_repeticion_time = time.time()
 
         self.safe_update_estado(f"Repeticiones: {self.repeticiones}/{self.repeticiones_objetivo}", "black")
+        
+        # Actualizar UI externa (mensaje y barra)
+        self.safe_update_mensaje_guia(self.mensaje_guia)
+        self.safe_update_barra_progreso(self.ejercicio_obj.progreso)
 
         tiempo_desde_ultima = time.time() - self.ultima_repeticion_time
         tiempo_restante = self.inactividad_max - tiempo_desde_ultima
@@ -230,16 +361,16 @@ class EntrenamientoScreen(tk.Frame):
             self.safe_update_inactividad_label("")
 
         if tiempo_desde_ultima >= self.inactividad_max:
+            logger.warning(f"Tiempo de inactividad excedido: {tiempo_desde_ultima:.1f}s")
             self.running = False
-            if self.cap.isOpened():
-                self.cap.release()
+            self.camera_manager.release()
             if self.callback_resumen:
                 self.callback_resumen(self.repeticiones, self.ejercicio_obj.errores_contador)
 
         if self.repeticiones >= self.repeticiones_objetivo:
+            logger.info(f"Objetivo alcanzado: {self.repeticiones}/{self.repeticiones_objetivo}")
             self.running = False
-            if self.cap.isOpened():
-                self.cap.release()
+            self.camera_manager.release()
             if self.callback_resumen:
                 self.callback_resumen(self.repeticiones, self.ejercicio_obj.errores_contador)
 
@@ -254,6 +385,67 @@ class EntrenamientoScreen(tk.Frame):
         def update():
             self.inactividad_label.config(text=texto)
         self.master.after(0, update)
+    
+    def safe_update_mensaje_guia(self, texto):
+        """Actualiza el mensaje guía en el label superior (fuera del video)"""
+        def update():
+            if texto:
+                self.mensaje_guia_label.config(text=texto, fg="#e74c3c")  # Rojo para errores
+            else:
+                self.mensaje_guia_label.config(text="Realizando ejercicio...", fg="#ecf0f1")
+        self.master.after(0, update)
+    
+    def safe_update_barra_progreso(self, progreso):
+        """Actualiza la barra de progreso en el canvas lateral"""
+        def update():
+            self.barra_canvas.delete("all")
+            
+            # Dimensiones del canvas
+            canvas_width = 80
+            canvas_height = 400
+            barra_width = 40
+            barra_height = 360
+            
+            # Centrar barra
+            x_offset = (canvas_width - barra_width) // 2
+            y_offset = 20
+            
+            # Dibujar contorno
+            self.barra_canvas.create_rectangle(
+                x_offset, y_offset,
+                x_offset + barra_width, y_offset + barra_height,
+                outline="white", width=3
+            )
+            
+            # Calcular altura del relleno
+            altura_relleno = int(progreso * barra_height)
+            
+            if altura_relleno > 0:
+                # Calcular color según progreso (rojo -> amarillo -> verde)
+                if progreso < 0.5:
+                    r = 255
+                    g = int(255 * (progreso * 2))
+                    b = 0
+                else:
+                    r = int(255 * (2 - progreso * 2))
+                    g = 255
+                    b = 0
+                
+                color_hex = f'#{r:02x}{g:02x}{b:02x}'
+                
+                # Dibujar relleno desde abajo hacia arriba
+                y_inicio = y_offset + barra_height - altura_relleno
+                self.barra_canvas.create_rectangle(
+                    x_offset + 2, y_inicio,
+                    x_offset + barra_width - 2, y_offset + barra_height - 2,
+                    fill=color_hex, outline=""
+                )
+            
+            # Actualizar porcentaje
+            porcentaje = int(progreso * 100)
+            self.porcentaje_label.config(text=f"{porcentaje}%")
+        
+        self.master.after(0, update)
 
     def safe_update_video(self, imgtk):
         def update():
@@ -262,6 +454,16 @@ class EntrenamientoScreen(tk.Frame):
         self.master.after(0, update)
 
     def destroy(self):
-        if self.cap.isOpened():
-            self.cap.release()
+        """Limpia recursos al destruir la pantalla"""
+        logger.info("Destruyendo pantalla de entrenamiento")
+        try:
+            # Detener sistema de audio
+            if hasattr(self, 'audio_manager') and self.audio_manager:
+                logger.info("Deteniendo sistema de audio...")
+                self.audio_manager.detener()
+            
+            # Liberar cámara
+            self.camera_manager.release()
+        except Exception as e:
+            logger.error(f"Error al destruir: {e}")
         super().destroy()

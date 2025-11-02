@@ -1,0 +1,277 @@
+2025-10-24 17:59:10 - FitCheck - INFO - ============================================================
+2025-10-24 17:59:10 - FitCheck - INFO - Iniciando FitCheck Application
+2025-10-24 17:59:10 - FitCheck - INFO - ============================================================
+2025-10-24 17:59:12 - FitCheck - INFO - Ejercicio seleccionado: Sentadilla tradicional
+2025-10-24 17:59:12 - FitCheck - INFO - GIF cargado exitosamente: c:\Users\matia\OneDrive\Escritorio\T-Emergentes-1\fullWindows_FitCheck\videos\sentadillas_tradicional.gif
+2025-10-24 17:59:19 - FitCheck - INFO - Usuario seleccionó 13 repeticiones para Sentadilla tradicional
+2025-10-24 17:59:20 - FitCheck - INFO - Inicializando entrenamiento: Sentadilla tradicional
+2025-10-24 17:59:20 - FitCheck - INFO - Iniciando detección de cámara...
+2025-10-24 17:59:20 - FitCheck - DEBUG - Probando cámara 0 con backend CAP_DSHOW
+2025-10-24 17:59:21 - FitCheck - INFO - ✓ Cámara inicializada: índice=0, backend=CAP_DSHOW
+2025-10-24 17:59:21 - FitCheck - INFO -   Resolución: 640x480
+2025-10-24 17:59:22 - FitCheck - INFO - Voz seleccionada: Microsoft Sabina Desktop - Spanish (Mexico)
+2025-10-24 17:59:22 - FitCheck - INFO - Motor TTS inicializado correctamente
+2025-10-24 17:59:22 - FitCheck - INFO - Audio loop iniciado
+2025-10-24 17:59:22 - FitCheck - INFO - Thread de audio iniciado
+2025-10-24 17:59:22 - FitCheck - INFO - AudioManager inicializado (habilitado=True)
+2025-10-24 17:59:22 - FitCheck - INFO - Sistema de audio habilitado
+2025-10-24 17:59:22 - FitCheck - INFO - Persona detectada en cámara
+2025-10-24 17:59:37 - FitCheck - DEBUG - Mensaje agregado a cola [P4]: Preparate
+2025-10-24 17:59:37 - FitCheck - DEBUG - Reproduciendo audio [P4]: Preparate
+2025-10-24 17:59:39 - FitCheck - DEBUG - Audio reproducido correctamente (1 total)
+2025-10-24 17:59:40 - FitCheck - INFO - Entrenamiento iniciado después de countdown
+2025-10-24 17:59:40 - FitCheck - DEBUG - Mensaje agregado a cola [P4]: Comienza
+2025-10-24 17:59:40 - FitCheck - DEBUG - Reproduciendo audio [P4]: Comienza
+2025-10-24 17:59:41 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Separa los pies
+2025-10-24 17:59:41 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Apoya bien los tobillos
+2025-10-24 17:59:41 - FitCheck - DEBUG - Mensaje agregado a cola [P1]: Evita que las rodillas se muevan hacia adentro
+2025-10-24 17:59:42 - FitCheck - DEBUG - Audio reproducido correctamente (2 total)
+2025-10-24 17:59:42 - FitCheck - DEBUG - Reproduciendo audio [P1]: Evita que las rodillas se muevan hacia adentro
+2025-10-24 17:59:42 - FitCheck - INFO - Transición de fase: reposo_inicial → descendente
+2025-10-24 17:59:43 - FitCheck - INFO - Transición de fase: descendente → punto_bajo
+2025-10-24 17:59:44 - FitCheck - INFO - Transición de fase: punto_bajo → ascendente
+2025-10-24 17:59:45 - FitCheck - INFO - Transición de fase: ascendente → completado
+2025-10-24 17:59:45 - FitCheck - INFO - Repetición completada! Total: 1
+2025-10-24 17:59:45 - FitCheck - DEBUG - Audio reproducido correctamente (3 total)
+2025-10-24 17:59:45 - FitCheck - DEBUG - Reproduciendo audio [P2]: Apoya bien los tobillos
+2025-10-24 17:59:45 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Separa los pies
+2025-10-24 17:59:45 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Apoya bien los tobillos
+2025-10-24 17:59:45 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Evita que las rodillas se muevan hacia adentro
+2025-10-24 17:59:46 - FitCheck - INFO - Transición de fase: reposo_inicial → descendente
+2025-10-24 17:59:46 - FitCheck - INFO - Transición de fase: descendente → punto_bajo
+2025-10-24 17:59:47 - FitCheck - INFO - Transición de fase: punto_bajo → ascendente
+2025-10-24 17:59:47 - FitCheck - INFO - Transición de fase: ascendente → completado
+2025-10-24 17:59:47 - FitCheck - INFO - Repetición completada! Total: 2
+2025-10-24 17:59:48 - FitCheck - DEBUG - Audio reproducido correctamente (4 total)
+2025-10-24 17:59:48 - FitCheck - DEBUG - Reproduciendo audio [P2]: Separa los pies
+2025-10-24 17:59:48 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Separa los pies
+2025-10-24 17:59:48 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Apoya bien los tobillos
+2025-10-24 17:59:48 - FitCheck - DEBUG - Mensaje agregado a cola [P1]: Evita que las rodillas se muevan hacia adentro
+2025-10-24 17:59:48 - FitCheck - INFO - Transición de fase: reposo_inicial → descendente
+2025-10-24 17:59:48 - FitCheck - INFO - Transición de fase: descendente → punto_bajo
+2025-10-24 17:59:48 - FitCheck - INFO - Transición de fase: punto_bajo → ascendente
+2025-10-24 17:59:50 - FitCheck - DEBUG - Audio reproducido correctamente (5 total)
+2025-10-24 17:59:50 - FitCheck - DEBUG - Reproduciendo audio [P1]: Evita que las rodillas se muevan hacia adentro
+2025-10-24 17:59:50 - FitCheck - INFO - Transición de fase: ascendente → completado
+2025-10-24 17:59:50 - FitCheck - INFO - Repetición completada! Total: 3
+2025-10-24 17:59:50 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Separa los pies
+2025-10-24 17:59:50 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Apoya bien los tobillos
+2025-10-24 17:59:50 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Evita que las rodillas se muevan hacia adentro
+2025-10-24 17:59:51 - FitCheck - INFO - Transición de fase: reposo_inicial → descendente
+2025-10-24 17:59:51 - FitCheck - INFO - Transición de fase: descendente → punto_bajo
+2025-10-24 17:59:52 - FitCheck - INFO - Transición de fase: punto_bajo → ascendente
+2025-10-24 17:59:52 - FitCheck - INFO - Transición de fase: ascendente → completado
+2025-10-24 17:59:52 - FitCheck - INFO - Repetición completada! Total: 4
+2025-10-24 17:59:53 - FitCheck - DEBUG - Audio reproducido correctamente (6 total)
+2025-10-24 17:59:53 - FitCheck - DEBUG - Reproduciendo audio [P2]: Apoya bien los tobillos
+2025-10-24 17:59:53 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Separa los pies
+2025-10-24 17:59:53 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Apoya bien los tobillos
+2025-10-24 17:59:53 - FitCheck - DEBUG - Mensaje agregado a cola [P1]: Evita que las rodillas se muevan hacia adentro
+2025-10-24 17:59:53 - FitCheck - INFO - Transición de fase: reposo_inicial → descendente
+2025-10-24 17:59:54 - FitCheck - INFO - Transición de fase: descendente → punto_bajo
+2025-10-24 17:59:55 - FitCheck - INFO - Transición de fase: punto_bajo → ascendente
+2025-10-24 17:59:55 - FitCheck - INFO - Transición de fase: ascendente → completado
+2025-10-24 17:59:55 - FitCheck - INFO - Repetición completada! Total: 5
+2025-10-24 17:59:55 - FitCheck - DEBUG - Audio reproducido correctamente (7 total)
+2025-10-24 17:59:55 - FitCheck - DEBUG - Reproduciendo audio [P1]: Evita que las rodillas se muevan hacia adentro
+2025-10-24 17:59:56 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Separa los pies
+2025-10-24 17:59:56 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Apoya bien los tobillos
+2025-10-24 17:59:56 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Evita que las rodillas se muevan hacia adentro
+2025-10-24 17:59:56 - FitCheck - INFO - Transición de fase: reposo_inicial → descendente
+2025-10-24 17:59:56 - FitCheck - INFO - Transición de fase: descendente → punto_bajo
+2025-10-24 17:59:56 - FitCheck - INFO - Transición de fase: punto_bajo → ascendente
+2025-10-24 17:59:58 - FitCheck - INFO - Transición de fase: ascendente → completado
+2025-10-24 17:59:58 - FitCheck - INFO - Repetición completada! Total: 6
+2025-10-24 17:59:58 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Separa los pies
+2025-10-24 17:59:58 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Apoya bien los tobillos
+2025-10-24 17:59:58 - FitCheck - DEBUG - Mensaje agregado a cola [P1]: Evita que las rodillas se muevan hacia adentro
+2025-10-24 17:59:59 - FitCheck - INFO - Transición de fase: reposo_inicial → descendente
+2025-10-24 17:59:59 - FitCheck - DEBUG - Audio reproducido correctamente (8 total)
+2025-10-24 17:59:59 - FitCheck - DEBUG - Reproduciendo audio [P1]: Evita que las rodillas se muevan hacia adentro
+2025-10-24 17:59:59 - FitCheck - INFO - Transición de fase: descendente → punto_bajo
+2025-10-24 17:59:59 - FitCheck - INFO - Transición de fase: punto_bajo → ascendente
+2025-10-24 18:00:00 - FitCheck - INFO - Transición de fase: ascendente → completado
+2025-10-24 18:00:00 - FitCheck - INFO - Repetición completada! Total: 7
+2025-10-24 18:00:00 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Separa los pies
+2025-10-24 18:00:00 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Apoya bien los tobillos
+2025-10-24 18:00:00 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Evita que las rodillas se muevan hacia adentro
+2025-10-24 18:00:01 - FitCheck - INFO - Transición de fase: reposo_inicial → descendente
+2025-10-24 18:00:01 - FitCheck - INFO - Transición de fase: descendente → punto_bajo
+2025-10-24 18:00:02 - FitCheck - DEBUG - Audio reproducido correctamente (9 total)
+2025-10-24 18:00:02 - FitCheck - DEBUG - Reproduciendo audio [P2]: Apoya bien los tobillos
+2025-10-24 18:00:03 - FitCheck - INFO - Transición de fase: punto_bajo → ascendente
+2025-10-24 18:00:03 - FitCheck - INFO - Transición de fase: ascendente → completado
+2025-10-24 18:00:03 - FitCheck - INFO - Repetición completada! Total: 8
+2025-10-24 18:00:04 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Separa los pies
+2025-10-24 18:00:04 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Apoya bien los tobillos
+2025-10-24 18:00:04 - FitCheck - DEBUG - Mensaje agregado a cola [P1]: Evita que las rodillas se muevan hacia adentro
+2025-10-24 18:00:04 - FitCheck - DEBUG - Audio reproducido correctamente (10 total)
+2025-10-24 18:00:04 - FitCheck - DEBUG - Reproduciendo audio [P1]: Evita que las rodillas se muevan hacia adentro
+2025-10-24 18:00:04 - FitCheck - INFO - Transición de fase: reposo_inicial → descendente
+2025-10-24 18:00:04 - FitCheck - INFO - Transición de fase: descendente → punto_bajo
+2025-10-24 18:00:06 - FitCheck - INFO - Transición de fase: punto_bajo → ascendente
+2025-10-24 18:00:06 - FitCheck - INFO - Transición de fase: ascendente → completado
+2025-10-24 18:00:06 - FitCheck - INFO - Repetición completada! Total: 9
+2025-10-24 18:00:07 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Separa los pies
+2025-10-24 18:00:07 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Apoya bien los tobillos
+2025-10-24 18:00:07 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Evita que las rodillas se muevan hacia adentro
+2025-10-24 18:00:08 - FitCheck - DEBUG - Audio reproducido correctamente (11 total)
+2025-10-24 18:00:08 - FitCheck - DEBUG - Reproduciendo audio [P2]: Separa los pies
+2025-10-24 18:00:10 - FitCheck - DEBUG - Audio reproducido correctamente (12 total)
+2025-10-24 18:00:10 - FitCheck - DEBUG - Reproduciendo audio [P2]: Apoya bien los tobillos
+2025-10-24 18:00:12 - FitCheck - DEBUG - Audio reproducido correctamente (13 total)
+2025-10-24 18:00:12 - FitCheck - DEBUG - Reproduciendo audio [P2]: Apoya bien los tobillos
+2025-10-24 18:00:14 - FitCheck - INFO - Transición de fase: reposo_inicial → descendente
+2025-10-24 18:00:14 - FitCheck - DEBUG - Audio reproducido correctamente (14 total)
+2025-10-24 18:00:14 - FitCheck - DEBUG - Reproduciendo audio [P2]: Separa los pies
+2025-10-24 18:00:15 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Alinea tus rodillas con los pies
+2025-10-24 18:00:16 - FitCheck - DEBUG - Audio reproducido correctamente (15 total)
+2025-10-24 18:00:16 - FitCheck - DEBUG - Reproduciendo audio [P2]: Separa los pies
+2025-10-24 18:00:17 - FitCheck - INFO - Transición de fase: descendente → punto_bajo
+2025-10-24 18:00:17 - FitCheck - INFO - Transición de fase: punto_bajo → ascendente
+2025-10-24 18:00:17 - FitCheck - INFO - Transición de fase: ascendente → completado
+2025-10-24 18:00:17 - FitCheck - INFO - Repetición completada! Total: 10
+2025-10-24 18:00:18 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Separa los pies
+2025-10-24 18:00:18 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Apoya bien los tobillos
+2025-10-24 18:00:18 - FitCheck - DEBUG - Mensaje agregado a cola [P1]: Evita que las rodillas se muevan hacia adentro
+2025-10-24 18:00:18 - FitCheck - INFO - Transición de fase: reposo_inicial → descendente
+2025-10-24 18:00:18 - FitCheck - DEBUG - Audio reproducido correctamente (16 total)
+2025-10-24 18:00:18 - FitCheck - DEBUG - Reproduciendo audio [P1]: Evita que las rodillas se muevan hacia adentro
+2025-10-24 18:00:19 - FitCheck - INFO - Transición de fase: descendente → punto_bajo
+2025-10-24 18:00:20 - FitCheck - INFO - Transición de fase: punto_bajo → ascendente
+2025-10-24 18:00:20 - FitCheck - INFO - Transición de fase: ascendente → completado
+2025-10-24 18:00:20 - FitCheck - INFO - Repetición completada! Total: 11
+2025-10-24 18:00:20 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Separa los pies
+2025-10-24 18:00:20 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Apoya bien los tobillos
+2025-10-24 18:00:20 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Evita que las rodillas se muevan hacia adentro
+2025-10-24 18:00:21 - FitCheck - INFO - Transición de fase: reposo_inicial → descendente
+2025-10-24 18:00:21 - FitCheck - INFO - Transición de fase: descendente → punto_bajo
+2025-10-24 18:00:21 - FitCheck - DEBUG - Mensaje agregado a cola [P2]: Alinea tus rodillas con los pies
+2025-10-24 18:00:22 - FitCheck - INFO - Transición de fase: punto_bajo → ascendente
+2025-10-24 18:00:22 - FitCheck - DEBUG - Audio reproducido correctamente (17 total)
+2025-10-24 18:00:22 - FitCheck - DEBUG - Reproduciendo audio [P2]: Separa los pies
+2025-10-24 18:00:22 - FitCheck - INFO - Transición de fase: ascendente → completado
+2025-10-24 18:00:22 - FitCheck - INFO - Repetición completada! Total: 12
+2025-10-24 18:00:23 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Separa los pies
+2025-10-24 18:00:23 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Apoya bien los tobillos
+2025-10-24 18:00:23 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Evita que las rodillas se muevan hacia adentro
+2025-10-24 18:00:23 - FitCheck - INFO - Transición de fase: reposo_inicial → descendente
+2025-10-24 18:00:23 - FitCheck - INFO - Transición de fase: descendente → punto_bajo
+2025-10-24 18:00:24 - FitCheck - DEBUG - Audio reproducido correctamente (18 total)
+2025-10-24 18:00:24 - FitCheck - DEBUG - Reproduciendo audio [P2]: Alinea tus rodillas con los pies
+2025-10-24 18:00:25 - FitCheck - DEBUG - Mensaje bloqueado (duplicado): Alinea tus rodillas con los pies
+2025-10-24 18:00:25 - FitCheck - INFO - Transición de fase: punto_bajo → ascendente
+2025-10-24 18:00:26 - FitCheck - INFO - Transición de fase: ascendente → completado
+2025-10-24 18:00:26 - FitCheck - INFO - Repetición completada! Total: 13
+2025-10-24 18:00:26 - FitCheck - INFO - Objetivo alcanzado: 13/13
+2025-10-24 18:00:26 - FitCheck - INFO - Cámara liberada correctamente
+2025-10-24 18:00:26 - FitCheck - INFO - Destruyendo pantalla de entrenamiento
+2025-10-24 18:00:26 - FitCheck - INFO - Deteniendo sistema de audio...
+2025-10-24 18:00:26 - FitCheck - INFO - Deteniendo AudioManager...
+2025-10-24 18:00:27 - FitCheck - DEBUG - Audio reproducido correctamente (19 total)
+2025-10-24 18:00:27 - FitCheck - INFO - Audio loop finalizado
+2025-10-24 18:00:27 - FitCheck - INFO - Cola de audio limpiada
+2025-10-24 18:00:27 - FitCheck - INFO - AudioManager detenido. Estadísticas: 19 enviados, 22 bloqueados
+2025-10-24 18:00:27 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:27 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:27 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:27 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:27 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:27 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:27 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:28 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:28 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:28 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:28 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:28 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:28 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:28 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:28 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:28 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:29 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:29 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:29 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:29 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:29 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:29 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:29 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:29 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:29 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:30 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:30 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:30 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:30 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:30 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:30 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:30 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:30 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:30 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:31 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:31 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:31 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:31 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:31 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:31 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:31 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:31 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:31 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:32 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:32 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:32 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:32 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:32 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:32 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:32 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:32 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:33 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:33 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:33 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:33 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:33 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:33 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:33 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:33 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:33 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:34 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:34 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:34 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:34 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:34 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:34 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:34 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:34 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:34 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:35 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:35 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:35 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:35 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:35 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:35 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:35 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:35 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:35 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:36 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:36 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:36 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:36 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:36 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:36 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:36 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:36 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:36 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:37 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:37 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:37 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:37 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:37 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:37 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:37 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:37 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:38 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:38 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:38 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:38 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:38 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:38 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:38 - FitCheck - WARNING - No se pudo leer frame de la cámara
+2025-10-24 18:00:38 - FitCheck - INFO - Aplicación cerrada

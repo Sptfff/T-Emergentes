@@ -1,8 +1,10 @@
 import tkinter as tk
-from tkinter import ttk
+from tkinter import ttk, messagebox
 from PIL import Image, ImageTk, ImageSequence
 import os
+from utils.logger import get_logger
 
+logger = get_logger()
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # ruta de seleccion_reps.py
 PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, ".."))  # sube a donde está main.py
@@ -81,9 +83,12 @@ class SeleccionRepsScreen(tk.Frame):
 
 
     def load_gif(self):
+        """Carga el GIF demostrativo del ejercicio con manejo de errores"""
         gif_path = self.get_gif_path()
+        
         if not gif_path or not os.path.exists(gif_path):
-            self.label_error.config(text="video no disponible para este ejercicio.")
+            logger.warning(f"GIF no encontrado para ejercicio: {self.nombre_ejercicio}")
+            self.label_error.config(text="Video no disponible para este ejercicio.")
             return
 
         try:
@@ -93,8 +98,13 @@ class SeleccionRepsScreen(tk.Frame):
                 for frame in ImageSequence.Iterator(gif)
             ]
             self.label_error.config(text="")  # Limpiar error si se carga correctamente
+            logger.info(f"GIF cargado exitosamente: {gif_path}")
+            
+        except FileNotFoundError:
+            logger.error(f"Archivo GIF no encontrado: {gif_path}")
+            self.label_error.config(text="Error: Archivo de video no encontrado.")
         except Exception as e:
-            print(f"Error cargando el GIF: {e}")
+            logger.error(f"Error cargando el GIF: {e}")
             self.label_error.config(text="Error al cargar el video.")
 
     def animate_gif(self):
@@ -106,7 +116,32 @@ class SeleccionRepsScreen(tk.Frame):
             self.after(100, self.animate_gif)
 
     def continuar(self):
-        self.callback_entrenamiento(int(self.spinbox.get()))
+        """Valida la entrada y continúa al entrenamiento"""
+        try:
+            reps = int(self.spinbox.get())
+            
+            # Validar rango
+            if reps < 1 or reps > 30:
+                logger.warning(f"Intento de seleccionar {reps} repeticiones (fuera de rango)")
+                messagebox.showerror(
+                    "Valor inválido", 
+                    "Por favor selecciona entre 1 y 30 repeticiones"
+                )
+                return
+            
+            logger.info(f"Usuario seleccionó {reps} repeticiones para {self.nombre_ejercicio}")
+            self.callback_entrenamiento(reps)
+            
+        except ValueError:
+            logger.error("Usuario ingresó valor no numérico en spinbox")
+            messagebox.showerror(
+                "Valor inválido", 
+                "Por favor ingresa un número válido"
+            )
+        except Exception as e:
+            logger.error(f"Error en continuar: {e}")
+            messagebox.showerror("Error", f"Ocurrió un error: {str(e)}")
 
     def volver(self):
+        logger.info("Usuario regresó a selección de ejercicios")
         self.callback_volver()

@@ -23,75 +23,153 @@ class Sentadilla(EjercicioBase):
             "rodillas_hacia_adentro": False,
             "rodillas_no_alineadas": False
         }
+        
+        # Configuración del sistema de fases
+        self.fases_config = {
+            "reposo_inicial": {
+                "rango_progreso": (0.0, 0.0),
+                "condicion_transicion": lambda ang, obj: ang < 155 and not obj.esta_en_reposo(),
+                "siguiente_fase": "descendente",
+                "mensaje": "Comienza a bajar"
+            },
+            "descendente": {
+                "rango_progreso": (0.0, 0.5),
+                "angulo_inicio": 160,
+                "angulo_fin": 90,
+                "condicion_transicion": lambda ang, obj: ang < 100,
+                "siguiente_fase": "punto_bajo",
+                "mensaje": "Continúa bajando"
+            },
+            "punto_bajo": {
+                "rango_progreso": (0.5, 0.5),
+                "condicion_transicion": lambda ang, obj: ang > 95 and not obj.esta_en_reposo(),
+                "siguiente_fase": "ascendente",
+                "mensaje": "¡Bien! Ahora sube"
+            },
+            "ascendente": {
+                "rango_progreso": (0.5, 1.0),
+                "angulo_inicio": 90,
+                "angulo_fin": 160,
+                "condicion_transicion": lambda ang, obj: ang > 155,
+                "siguiente_fase": "completado",
+                "mensaje": "Continúa subiendo"
+            },
+            "completado": {
+                "rango_progreso": (1.0, 1.0),
+                "condicion_transicion": lambda ang, obj: False,  # Reset manejado por delay automático
+                "siguiente_fase": "reposo_inicial",
+                "mensaje": "¡Repetición completa!"
+            }
+        }
+        
+        self.fase_actual = "reposo_inicial"
+    
+    def calcular_progreso_por_fase(self, angulo):
+        """Calcula progreso visual basado en fase actual y ángulo"""
+        fase = self.fases_config.get(self.fase_actual, {})
+        rango = fase.get("rango_progreso", (0.0, 0.0))
+        
+        if self.fase_actual in ["reposo_inicial", "punto_bajo", "completado"]:
+            # Fases estáticas
+            return rango[0]
+        
+        elif self.fase_actual == "descendente":
+            # Mapear ángulo 160→90 a progreso 0.0→0.5
+            ang_inicio = fase.get("angulo_inicio", 160)
+            ang_fin = fase.get("angulo_fin", 90)
+            progreso_normalizado = (ang_inicio - angulo) / (ang_inicio - ang_fin)
+            progreso_normalizado = max(0.0, min(1.0, progreso_normalizado))
+            return rango[0] + (rango[1] - rango[0]) * progreso_normalizado
+        
+        elif self.fase_actual == "ascendente":
+            # Mapear ángulo 90→160 a progreso 0.5→1.0
+            ang_inicio = fase.get("angulo_inicio", 90)
+            ang_fin = fase.get("angulo_fin", 160)
+            progreso_normalizado = (angulo - ang_inicio) / (ang_fin - ang_inicio)
+            progreso_normalizado = max(0.0, min(1.0, progreso_normalizado))
+            return rango[0] + (rango[1] - rango[0]) * progreso_normalizado
+        
+        return 0.0
 
     def procesar_pose(self, landmarks):
+        """
+        Procesar pose con sistema de fases y detección de errores.
+        Ahora usa el sistema de fases para un progreso más preciso.
+        """
+        # ===== NIVEL 1: PROCESAMIENTO VISUAL CON SISTEMA DE FASES =====
         rodilla = (landmarks['RIGHT_KNEE'].x, landmarks['RIGHT_KNEE'].y)
         cadera = (landmarks['RIGHT_HIP'].x, landmarks['RIGHT_HIP'].y)
         tobillo = (landmarks['RIGHT_ANKLE'].x, landmarks['RIGHT_ANKLE'].y)
-        hombro = (landmarks['RIGHT_SHOULDER'].x, landmarks['RIGHT_SHOULDER'].y)
 
+        # Calcular ángulo principal
         angulo_rodilla = calcular_angulo(cadera, rodilla, tobillo)
-        distancia_pies = abs(landmarks['RIGHT_FOOT_INDEX'].x - landmarks['LEFT_FOOT_INDEX'].x)
-        umbral_dist_pies = 0.12
-
-        umbral_bajada = 90
-        umbral_subida = 160
-
-        angulo_espalda = calcular_angulo(hombro, cadera, rodilla)
-
-        mensajes = []
-        nueva_repeticion = False
-
-        # Flujo de repeticiones
-        if self.estado_actual == "arriba" and angulo_rodilla < umbral_bajada:
-            self.estado_actual = "bajando"
-        elif self.estado_actual == "bajando" and angulo_rodilla > umbral_subida:
-            self.estado_actual = "arriba"
-            self.repeticiones += 1
-            mensajes.append("Buena repeticion!")
-            nueva_repeticion = True
-
-        # Detección de errores (una vez por repetición)
-        if distancia_pies < umbral_dist_pies and not self.error_flags["pies_juntos"]:
-            self.errores_contador["pies_juntos"] += 1
-            self.error_flags["pies_juntos"] = True
-            mensajes.append("Separa los pies")
-
-        if angulo_espalda < 70 and not self.error_flags["espalda_inclinada"]:
-            self.errores_contador["espalda_inclinada"] += 1
-            self.error_flags["espalda_inclinada"] = True
-            mensajes.append("Manten la espalda recta")
-
-        if tobillo[1] > cadera[1] + 0.1 and not self.error_flags["tobillos_no_apoyados"]:
-            self.errores_contador["tobillos_no_apoyados"] += 1
-            self.error_flags["tobillos_no_apoyados"] = True
-            mensajes.append("Apoya bien los tobillos")
-
-        # Rodillas hacia adentro
-        if rodilla[1] < tobillo[1] and not self.error_flags["rodillas_hacia_adentro"]:
-            self.errores_contador["rodillas_hacia_adentro"] += 1
-            self.error_flags["rodillas_hacia_adentro"] = True
-            mensajes.append("Evita que las rodillas se muevan hacia adentro")
-
-        # Alineación de rodillas con los pies
-        if abs(rodilla[0] - tobillo[0]) > 0.1 and not self.error_flags["rodillas_no_alineadas"]:
-            self.errores_contador["rodillas_no_alineadas"] += 1
-            self.error_flags["rodillas_no_alineadas"] = True
-            mensajes.append("Alinea tus rodillas con los pies")
-
-        if nueva_repeticion:
-            for key in self.error_flags:
-                self.error_flags[key] = False
-
-        # Mensaje alternativo si no hay errores ni indicaciones y está arriba
-        if not mensajes and self.estado_actual == "arriba":
-            mensajes.append("Baja mas")
-
-        self.mensaje_guia = " | ".join(mensajes)
-
-        self.progreso = (angulo_rodilla - umbral_bajada) / (umbral_subida - umbral_bajada)
-        self.progreso = max(0.0, min(1.0, self.progreso))
         self.ultimo_angulo = angulo_rodilla
+        
+        mensajes = []
+
+        # Actualizar fase y progreso usando el sistema de fases
+        # Esto automáticamente maneja las transiciones y el incremento de repeticiones
+        self.actualizar_fase_y_progreso(angulo_rodilla)
+
+        # ===== NIVEL 2: DETECCIÓN DE ERRORES (CONDICIONAL) =====
+        if self.debe_verificar_errores():
+            # Solo ahora calculamos métricas adicionales
+            hombro = (landmarks['RIGHT_SHOULDER'].x, landmarks['RIGHT_SHOULDER'].y)
+            distancia_pies = abs(landmarks['RIGHT_FOOT_INDEX'].x - landmarks['LEFT_FOOT_INDEX'].x)
+            angulo_espalda = calcular_angulo(hombro, cadera, rodilla)
+            
+            umbral_dist_pies = 0.12
+
+            # Detección de errores con confirmación
+            if self.validar_error_con_confirmacion(
+                "pies_juntos", 
+                distancia_pies < umbral_dist_pies
+            ):
+                msg = "Separa los pies"
+                mensajes.append(msg)
+                self.enviar_audio(msg, es_error=True)
+
+            if self.validar_error_con_confirmacion(
+                "espalda_inclinada",
+                angulo_espalda < 70
+            ):
+                msg = "Manten la espalda recta"
+                mensajes.append(msg)
+                self.enviar_audio(msg, es_error=True, critico=True)
+
+            if self.validar_error_con_confirmacion(
+                "tobillos_no_apoyados",
+                tobillo[1] > cadera[1] + 0.1
+            ):
+                msg = "Apoya bien los tobillos"
+                mensajes.append(msg)
+                self.enviar_audio(msg, es_error=True)
+
+            if self.validar_error_con_confirmacion(
+                "rodillas_hacia_adentro",
+                rodilla[1] < tobillo[1]
+            ):
+                msg = "Evita que las rodillas se muevan hacia adentro"
+                mensajes.append(msg)
+                self.enviar_audio(msg, es_error=True, critico=True)
+
+            if self.validar_error_con_confirmacion(
+                "rodillas_no_alineadas",
+                abs(rodilla[0] - tobillo[0]) > 0.1
+            ):
+                msg = "Alinea tus rodillas con los pies"
+                mensajes.append(msg)
+                self.enviar_audio(msg, es_error=True)
+
+        # Mensaje por defecto basado en la fase actual
+        if not mensajes and not self.mensaje_cache:
+            fase_config = self.fases_config.get(self.fase_actual, {})
+            mensaje_fase = fase_config.get("mensaje", "")
+            if mensaje_fase:
+                mensajes.append(mensaje_fase)
+
+        # Actualizar mensaje con sistema de cache
+        self.actualizar_mensaje_guia(mensajes if mensajes else None)
 
     def dibujar_feedback(self, frame, landmarks):
         height, width = frame.shape[:2]
@@ -120,50 +198,6 @@ class Sentadilla(EjercicioBase):
                         (rodilla_px[0] + 10, rodilla_px[1] - 10),
                         cv2.FONT_HERSHEY_SIMPLEX, 1.2, (255, 255, 255), 3)
 
-        # Barra de progreso
-        barra_altura = int(height * 0.6)
-        barra_ancho = 30
-        barra_x = width - 50
-        barra_y = int(height * 0.2)
-
-        for i in range(barra_altura):
-            progreso_local = 1.0 - i / barra_altura
-            r = int(255 * (1 - progreso_local))
-            g = int(255 * progreso_local)
-            color = (0, g, r)
-            cv2.line(overlay,
-                     (barra_x, barra_y + i),
-                     (barra_x + barra_ancho, barra_y + i),
-                     color, 1)
-
-        progreso_px = int((1.0 - self.progreso) * barra_altura)
-        cv2.rectangle(overlay,
-                      (barra_x - 2, barra_y + progreso_px - 2),
-                      (barra_x + barra_ancho + 2, barra_y + progreso_px + 2),
-                      (255, 255, 255), -1)
-
-        # Mostrar mensaje guía
-        if self.mensaje_guia:
-            # Calcular el tamaño del texto para ajustarlo al espacio
-            (text_width, text_height), baseline = cv2.getTextSize(self.mensaje_guia, cv2.FONT_HERSHEY_SIMPLEX, 2.0, 2)
-            box_x, box_y = 45, 30
-
-            # Ajustar el tamaño de la fuente si el texto es demasiado largo
-            max_width = frame.shape[1] - 100  # Ancho máximo disponible para el texto
-            if text_width > max_width:
-                scale_factor = max_width / text_width  # Calcular un factor de escala
-                font_scale = 2.0 * scale_factor  # Ajustar el tamaño de la fuente
-            else:
-                font_scale = 2.0  # Mantener el tamaño original de la fuente si cabe
-
-            # Recalcular el tamaño del texto con el nuevo font_scale
-            (text_width, text_height), baseline = cv2.getTextSize(self.mensaje_guia, cv2.FONT_HERSHEY_SIMPLEX, font_scale, 2)
-
-            # Dibujar fondo negro para el texto (opaco)
-            cv2.rectangle(frame, (box_x - 10, box_y - 10), (box_x + text_width + 20, box_y + text_height + 20), (0, 0, 0), -1)
-
-            # Dibujar el texto ajustado
-            cv2.putText(frame, self.mensaje_guia, (box_x, box_y + text_height + 5),
-                        cv2.FONT_HERSHEY_SIMPLEX, font_scale, (0, 0, 255), 2, cv2.LINE_AA)
+        # Nota: Barra de progreso y mensajes ahora se dibujan en la UI de Tkinter
 
         return cv2.addWeighted(frame, 1, overlay, 0.7, 0)
